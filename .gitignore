@@ -18,4 +18,5 @@
 !notification.mp3
 !options.ini
 !package*.json
+!README.md
 !*.mjs
