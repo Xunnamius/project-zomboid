@@ -6,11 +6,14 @@
  * Runs best on Windows (when called from cmd.exe), but it probably works on
  * Linux too.
  *
- * You can call this script like so:
+ * You can call this script like so (after running npm install):
  *
  * Start the timer at the default start time/day (9:00):   node time.mjs
  * Start the timer at a specific time and unknown day:     node time.mjs 10:00
  * Start the timer at a specific time and known day:       node time.mjs 10:00 3
+ *
+ * Note that notifications will be disabled if the day is unknown, or if the
+ * day is greater than 9.
  *
  * Once the script is running, you can use the keyboard to Pause the timer,
  * Resume the timer, and Fast-forward the timer to a specific time and day.
@@ -34,19 +37,88 @@ let lookingForInput = false;
 
 if (startTimeArgv) {
   const [hours, minutes] = startTimeArgv.split(':').map((str) => Number(str));
+
+  if (
+    hours === undefined ||
+    minutes === undefined ||
+    Number.isNaN(hours) ||
+    Number.isNaN(minutes)
+  ) {
+    throw new Error('invalid start time');
+  }
+
   startTimeHours = hours;
   startTimeMinutes = minutes;
 }
 
-const pad = (num) => num.toString().padStart(2, '0');
+readline.emitKeypressEvents(process.stdin);
 
-const clearLineAndWrite = (str) => {
-  process.stdout.clearLine();
-  process.stdout.cursorTo(0);
-  process.stdout.write(str);
-};
+if (process.stdin.isTTY) {
+  process.stdin.setRawMode(true);
+}
 
-const initializeScreen = () => {
+process.stdin.on('keypress', (_, key) => {
+  if (key.ctrl && key.name === 'c') {
+    process.exit();
+  } else if (lookingForInput) {
+    if (key.name === 'return') {
+      const [hours, minutes, day] = seenInput
+        .split(' ')
+        .map((str) => Number(str));
+
+      if (
+        hours === undefined ||
+        minutes === undefined ||
+        day === undefined ||
+        Number.isNaN(hours) ||
+        Number.isNaN(minutes) ||
+        Number.isNaN(day)
+      ) {
+        throw new Error('invalid input format');
+      }
+
+      startTimeMs = Date.now();
+      startDayArgv = day.toString();
+      startTimeHours = hours;
+      startTimeMinutes = minutes;
+      pauseTimeMs = 0;
+
+      seenInput = '';
+      lookingForInput = false;
+      process.stdout.cursorTo(0, 0);
+      process.stdout.clearScreenDown();
+      restartProgram();
+    } else {
+      const keyValue = key.name === 'space' ? ' ' : key.name;
+      process.stdout.write(keyValue);
+      seenInput += keyValue;
+    }
+  } else {
+    if (key.name === 'p' || key.name === 'f') {
+      clearInterval(interval);
+      pauseTimeMs = Date.now();
+      clearLineAndWrite(`-- clock paused at ${getTime({ format: 2 })} --`);
+
+      if (key.name === 'f') {
+        process.stdout.write('\nenter new time and day (HH MM D): ');
+        lookingForInput = true;
+      }
+    } else if (key.name === 'r' && pauseTimeMs > 0) {
+      startTimeMs += Date.now() - pauseTimeMs;
+      pauseTimeMs = 0;
+      startReportingTime();
+    }
+  }
+});
+
+restartProgram();
+
+function restartProgram() {
+  initializeScreen();
+  startReportingTime();
+}
+
+function initializeScreen() {
   console.log(
     `started timer at ${pad(startTimeHours)}:${pad(startTimeMinutes)} on day ${
       startDayArgv ?? 1
@@ -54,39 +126,25 @@ const initializeScreen = () => {
   );
 
   process.stdout.write('initializing...');
-};
+}
 
-const startReportingTime = () => {
-  clearLineAndWrite(getTime());
-  interval = setInterval(() => {
+function startReportingTime() {
+  const writeTimeAndConsiderAlarm = () => {
     const [timeAndDay, time, day] = getTime({ format: 3 });
     clearLineAndWrite(timeAndDay);
+    maybeTriggerAlarm(time, day);
+  };
 
-    if (
-      // *** Life and Living channel schedule***
-      // * 9:00 is the default start time, so catch that cooking show!
-      (day === 1 && ['09:00', '23:50'].includes(time)) ||
-      // * I think there's a fishing show that comes on at midnight the 1st day
-      (day === 2 && time === '00:00') ||
-      // * Skip the 6pm time slot on the 4th and 8th days
-      (day < 9 &&
-        day !== 4 &&
-        day !== 8 &&
-        ['17:50', '18:00'].includes(time)) ||
-      // * Issue notifications until the media blackout occurs
-      (day < 9 && ['05:50', '06:00', '11:50', '12:00'].includes(time)) ||
-      (day === 9 && ['05:50', '06:00'].includes(time))
-      // *** Trelai HQ TV channel schedule***
-    ) {
-      playAudioFile('notification.mp3');
-    }
-  }, (1 / igMinutesPerIrlSecond) * 1000);
-};
+  writeTimeAndConsiderAlarm();
+  interval = setInterval(
+    writeTimeAndConsiderAlarm,
+    (1 / igMinutesPerIrlSecond) * 1000
+  );
+}
 
-const getTime = ({ customStartTimeMs, format = 1 } = {}) => {
+function getTime({ format = 1 } = {}) {
   const igMinutesSinceStart =
-    ((Date.now() - (customStartTimeMs ?? startTimeMs)) / 1000) *
-      igMinutesPerIrlSecond +
+    ((Date.now() - startTimeMs) / 1000) * igMinutesPerIrlSecond +
     startTimeMinutes +
     startTimeHours * 60;
 
@@ -100,6 +158,13 @@ const getTime = ({ customStartTimeMs, format = 1 } = {}) => {
       : (startDayArgv ? Number(startDayArgv) : 1) +
         Math.floor(igMinutesSinceStart / (60 * 24));
 
+  if (Number.isNaN(startTimeArgv)) {
+    throw new Error('invalid start day');
+  }
+
+  /**
+   * @type {string | [string, string, number | '?']}
+   */
   const timeAndDay =
     format === 1
       ? `[day ${day}] ${time}`
@@ -110,67 +175,43 @@ const getTime = ({ customStartTimeMs, format = 1 } = {}) => {
       : '???';
 
   return timeAndDay;
-};
-
-const restartProgram = () => {
-  initializeScreen();
-  startReportingTime();
-};
-
-readline.emitKeypressEvents(process.stdin);
-
-if (process.stdin.isTTY) {
-  process.stdin.setRawMode(true);
 }
 
-process.stdin.on('keypress', (_, key) => {
-  if (lookingForInput) {
-    if (key.name === 'enter') {
-      const [time, day] = seenInput.split(' ');
-      const [hours, minutes] = time?.split(':').map((str) => Number(str));
+/**
+ * @param num {string | number}
+ */
+function pad(num) {
+  return num.toString().padStart(2, '0');
+}
 
-      if (
-        time === undefined ||
-        day === undefined ||
-        hours === undefined ||
-        minutes === undefined
-      ) {
-        throw new Error('invalid input format');
-      }
+function clearLineAndWrite(str) {
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+  process.stdout.write(str);
+}
 
-      startDayArgv = day;
-      startTimeHours = hours;
-      startTimeMinutes = minutes;
-      pauseTimeMs = 0;
-
-      seenInput = '';
-      lookingForInput = false;
-      process.stdout.cursorTo(0, 0);
-      process.stdout.clearScreenDown();
-      restartProgram();
-    } else {
-      process.stdout.write(key.name);
-      seenInput += key.name;
-    }
-  } else {
-    if (key.ctrl && key.name === 'c') {
-      process.exit();
-    } else if (key.name === 'p' || key.name === 'f') {
-      clearInterval(interval);
-      pauseTimeMs = Date.now();
-      clearLineAndWrite(
-        `-- clock paused at ${getTime({ format: 2 })} on day  --`
-      );
-
-      if (key.name === 'f') {
-        process.stdout.write('\nenter new time and day (HH:MM D): ');
-        lookingForInput = true;
-      }
-    } else if (key.name === 'r') {
-      startTimeMs += Date.now() - pauseTimeMs;
-      startReportingTime();
-    }
+/**
+ * @param time {string}
+ * @param day {number}
+ */
+function maybeTriggerAlarm(time, day) {
+  // *** Life and Living channel schedule alarm***
+  if (
+    // * 9:00 is the default start time, so catch that cooking show!
+    (day === 1 && ['09:00', '23:50'].includes(time)) ||
+    // * I think there's a fishing show that comes on at midnight the 1st day
+    (day === 2 && time === '00:00') ||
+    // * Skip the 6pm time slot on the 4th and 8th days
+    (day < 9 && day !== 4 && day !== 8 && ['17:50', '18:00'].includes(time)) ||
+    // * Issue notifications until the media blackout occurs
+    (day < 9 && ['05:50', '06:00', '11:50', '12:00'].includes(time)) ||
+    (day === 9 && ['05:50', '06:00'].includes(time))
+  ) {
+    playAudioFile('notification-lal.mp3');
   }
-});
 
-restartProgram();
+  // *** Trelai HQ TV channel schedule alarm***
+  if (false) {
+    playAudioFile('notification-trelai.mp3');
+  }
+}
