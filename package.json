@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "audic": "^3.0.1"
+    "audic": "^3.0.1",
+    "xml2js": "^0.4.23"
   }
 }
