@@ -1,3 +1,21 @@
+/**
+ * This script will tell you what time it is in-game and also play a
+ * notification sound 10 in-game minutes before Life and Living (and Trelai HQ
+ * TV) tv shows are scheduled to come on. Requires latest Node.js installed.
+ *
+ * Runs best on Windows (when called from cmd.exe), but it probably works on
+ * Linux too.
+ *
+ * You can call this script like so:
+ *
+ * Start the timer at the default start time/day (9:00):   node time.mjs
+ * Start the timer at a specific time and unknown day:     node time.mjs 10:00
+ * Start the timer at a specific time and known day:       node time.mjs 10:00 3
+ *
+ * Once the script is running, you can use the keyboard to pause the timer,
+ * resume the timer, and fast-forward the timer.
+ */
+
 import { playAudioFile } from 'audic';
 import readline from 'readline';
 
