@@ -1,0 +1,21 @@
+*
+!Lua
+!Lua/keys.ini
+!Lua/layout.ini
+!Lua/modmanager-mods.txt
+!Lua/modmanager.ini
+!Lua/mods_options.ini
+!Lua/saved_builds.txt
+!Lua/saved_modlists.txt
+!Lua/saved_modtags.txt
+!Lua/saved_outfits.txt
+!Saves
+!Saves/**/*
+!Sandbox\ Presets
+!Sandbox\ Presets/**/*
+!.gitignore
+!lastestSave.ini
+!notification.mp3
+!options.ini
+!package*.json
+!*.mjs

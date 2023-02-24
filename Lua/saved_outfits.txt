@@ -1,0 +1,2 @@
+VERSION=1
+Tre Giles:gender=2;skincolor=0.36,0.25,0.14;name=Tre|Giles;hair=ShortAfroCurly|0.10588235408067703,0.09019608050584793,0.08627451211214066;chesthair=1;beard=ChinstrapThin;Eyes=Base.Glasses_Normal|1;Shirt=Base.Shirt_FormalTINT|0,0,0;Pants=Base.Trousers_DefaultTEXTURE_TINT|0,0,0;Socks=Base.Socks_Ankle|0,0,0;Shoes=Base.Shoes_TrainerTINT|0.31200000643730164,0.23999999463558197,0.6000000238418579;Mask=Base.Hat_DustMask;
