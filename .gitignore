@@ -15,7 +15,7 @@
 !Sandbox\ Presets/**/*
 !.gitignore
 !lastestSave.ini
-!notification.mp3
+!*.mp3
 !options.ini
 !package*.json
 !README.md
