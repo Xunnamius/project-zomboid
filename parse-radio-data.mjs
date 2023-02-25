@@ -30,23 +30,7 @@ const radioData = await parseStringPromise(
   )
 );
 
-const Interactions = {
-  ANG: 'Anger',
-  BOR: 'Boredom',
-  END: 'Endurance',
-  FAT: 'Fatigue',
-  FIT: 'Fitness',
-  HUN: 'Hunger',
-  MOR: 'Morale',
-  STS: 'Stress',
-  FEA: 'Fear',
-  PAN: 'Panic',
-  SAN: 'Sanity',
-  SIC: 'Sickness',
-  PAI: 'Pain',
-  DRU: 'Drunkenness',
-  THI: 'Thirst',
-  UHP: 'Unhappiness',
+const SkillInteractions = {
   SPR: 'Sprinting',
   LFT: 'Lightfooted',
   NIM: 'Nimble',
@@ -71,6 +55,25 @@ const Interactions = {
   SBU: 'SmallBlunt',
   LBA: 'LongBlade',
   SBA: 'SmallBlade'
+};
+
+const OtherInteractions = {
+  ANG: 'Anger',
+  BOR: 'Boredom',
+  END: 'Endurance',
+  FAT: 'Fatigue',
+  FIT: 'Fitness',
+  HUN: 'Hunger',
+  MOR: 'Morale',
+  STS: 'Stress',
+  FEA: 'Fear',
+  PAN: 'Panic',
+  SAN: 'Sanity',
+  SIC: 'Sickness',
+  PAI: 'Pain',
+  DRU: 'Drunkenness',
+  THI: 'Thirst',
+  UHP: 'Unhappiness'
 };
 
 const data = (
@@ -108,8 +111,17 @@ const data = (
                       .match(/^(\w+)(\+|\-|=)([\d.]+)$/)
                       .slice(1);
 
+                    const skillInteraction = SkillInteractions[id];
+                    const otherInteraction = OtherInteractions[id];
+
                     return {
-                      interaction: Interactions[id] || unknown,
+                      interaction:
+                        skillInteraction || otherInteraction || unknown,
+                      type: skillInteraction
+                        ? 'skill'
+                        : otherInteraction
+                        ? 'other'
+                        : unknown,
                       operation:
                         op === '+'
                           ? 'addition'
@@ -128,6 +140,41 @@ const data = (
   };
 });
 
+data.forEach((show) => {
+  show.scripts.forEach((script) => {
+    console.log(show.name, '-', script.name);
+    console.log('---');
+
+    script.broadcasts.forEach(({ day, startTime, endTime, lines }) => {
+      let ticks = 0;
+      let skillInteractions = {};
+      let otherInteractions = {};
+
+      lines.forEach(({ codes }) => {
+        codes.forEach(({ interaction, type, operation, number }) => {
+          const target =
+            type === 'skill' ? skillInteractions : otherInteractions;
+
+          if (target === undefined) {
+            target[interaction] = 0;
+          }
+
+          target[interaction] +=
+            (operation === 'subtraction' ? -1 : 1) * number;
+        });
+      });
+
+      console.log(
+        `[day ${day}] ${startTime} to ${endTime}\nSkills:\n${
+          skillInteractions || '(none)'
+        }\nTicks:\n${ticks}\nOther Interactions:\n${
+          otherInteractions || '(none)'
+        }\n---\n`
+      );
+    });
+  });
+});
+
 function minutesToTime(time) {
   return `${Math.floor(time / 60) % (24).toString().padStart(2, '0')}:${(
     time % 60
@@ -135,5 +182,3 @@ function minutesToTime(time) {
     .toString()
     .padStart(2, '0')}`;
 }
-
-console.log(data);
