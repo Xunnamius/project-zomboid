@@ -13,6 +13,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve as resolvePath } from 'node:path';
 import { parseStringPromise } from 'xml2js';
 
+const unknown = Symbol('unknown');
 const radioDataFilePath = process.argv[2];
 
 if (!radioDataFilePath) {
@@ -29,7 +30,7 @@ const radioData = await parseStringPromise(
   )
 );
 
-const interactions = {
+const Interactions = {
   ANG: 'Anger',
   BOR: 'Boredom',
   END: 'Endurance',
@@ -72,14 +73,52 @@ const interactions = {
   SBA: 'SmallBlade'
 };
 
-radioData.RadioData.Channels.flatMap((channel) =>
-  channel.ChannelEntry.filter((entry) => entry.$.cat === 'Television')
-).map((entry) => {
+(
+  radioData.RadioData.Channels.flatMap((channel) =>
+    (channel.ChannelEntry || []).filter(
+      (channelEntry) => channelEntry.$.cat === 'Television'
+    )
+  ) || []
+).map((channelEntry) => {
   return {
-    isStartScript: false,
-    name: entry.$.name,
-    broadcasts: entry.ScriptEntry.map((entry) => {
-      return { name: entry.$.name };
+    name: channelEntry.$.name || unknown,
+    scripts: (channelEntry.ScriptEntry || []).map((scriptEntry) => {
+      return {
+        name: scriptEntry.$.name || unknown,
+        isStartScript:
+          scriptEntry.$.name && scriptEntry.$.name === channelEntry.$.name,
+        broadcasts: (scriptEntry.BroadcastEntry || []).map((broadcastEntry) => {
+          return {
+            day: broadcastEntry.$.day ?? unknown,
+            startTime: broadcastEntry.$.timestamp ?? unknown,
+            endTime: broadcastEntry.$.endstamp ?? unknown,
+            lines: (broadcastEntry.LineEntry || []).map((lineEntry) => {
+              return {
+                line: lineEntry._,
+                codes: (lineEntry.$.codes?.split(',') || [])
+                  .filter((code) => Boolean(code))
+                  .map((code) => {
+                    console.log('code=', code);
+                    const [id, op, num] = code.match(
+                      /^(\w+)(\+|\-|=)([\d.]+)$/
+                    );
+                    console.log('matches=', id, op, num);
+                    return {
+                      interaction: Interactions[id] || unknown,
+                      operation:
+                        op === '+'
+                          ? 'addition'
+                          : op === '-'
+                          ? 'subtraction'
+                          : unknown,
+                      number: num
+                    };
+                  })
+              };
+            })
+          };
+        })
+      };
     })
   };
 });
