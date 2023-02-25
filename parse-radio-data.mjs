@@ -73,7 +73,7 @@ const Interactions = {
   SBA: 'SmallBlade'
 };
 
-(
+const data = (
   radioData.RadioData.Channels.flatMap((channel) =>
     (channel.ChannelEntry || []).filter(
       (channelEntry) => channelEntry.$.cat === 'Television'
@@ -90,19 +90,24 @@ const Interactions = {
         broadcasts: (scriptEntry.BroadcastEntry || []).map((broadcastEntry) => {
           return {
             day: broadcastEntry.$.day ?? unknown,
-            startTime: broadcastEntry.$.timestamp ?? unknown,
-            endTime: broadcastEntry.$.endstamp ?? unknown,
+            startTime:
+              broadcastEntry.$.timestamp === undefined
+                ? unknown
+                : minutesToTime(broadcastEntry.$.timestamp),
+            endTime:
+              broadcastEntry.$.endstamp === undefined
+                ? unknown
+                : minutesToTime(broadcastEntry.$.endstamp),
             lines: (broadcastEntry.LineEntry || []).map((lineEntry) => {
               return {
                 line: lineEntry._,
                 codes: (lineEntry.$.codes?.split(',') || [])
                   .filter((code) => Boolean(code))
                   .map((code) => {
-                    console.log('code=', code);
-                    const [id, op, num] = code.match(
-                      /^(\w+)(\+|\-|=)([\d.]+)$/
-                    );
-                    console.log('matches=', id, op, num);
+                    const [id, op, num] = code
+                      .match(/^(\w+)(\+|\-|=)([\d.]+)$/)
+                      .slice(1);
+
                     return {
                       interaction: Interactions[id] || unknown,
                       operation:
@@ -123,4 +128,12 @@ const Interactions = {
   };
 });
 
-console.log(radioData);
+function minutesToTime(time) {
+  return `${Math.floor(time / 60) % (24).toString().padStart(2, '0')}:${(
+    time % 60
+  )
+    .toString()
+    .padStart(2, '0')}`;
+}
+
+console.log(data);
