@@ -16,11 +16,15 @@
  * day is greater than 9.
  *
  * Once the script is running, you can use the keyboard to Pause the timer,
- * Resume the timer, and Fast-forward the timer to a specific time and day.
+ * Resume the timer, Fast-forward the timer to a specific time and day, and get
+ * information about the Next notification times.
  */
 
 import { playAudioFile } from 'audic';
 import readline from 'readline';
+
+const notificationSoundFileLifeAndLiving = 'notification-lal.mp3';
+const notificationSoundFileTrelai = 'notification-trelai.mp3';
 
 const igMinutesPerIrlSecond = 24 / 60;
 const startTimeArgv = process.argv[2];
@@ -107,6 +111,12 @@ process.stdin.on('keypress', (_, key) => {
       startTimeMs += Date.now() - pauseTimeMs;
       pauseTimeMs = 0;
       startReportingTime();
+    } else if (key.name === 'n') {
+      clearLineAndWrite(`--> upcoming notifications <--\n`);
+      process.stdout.write(`${peekNextAlarm(0)}\n`);
+      process.stdout.write(`${peekNextAlarm(1)}\n`);
+      process.stdout.write(`${peekNextAlarm(2)}\n`);
+      process.stdout.write('--\n');
     }
   }
 });
@@ -195,6 +205,18 @@ function clearLineAndWrite(str) {
  * @param day {number}
  */
 function maybeTriggerAlarm(time, day) {
+  const [subject, alarmTime, alarmDay] = getNextAlarm();
+
+  if (day === alarmDay && time === alarmTime) {
+    playAudioFile(
+      subject === 'life-and-living'
+        ? notificationSoundFileLifeAndLiving
+        : notificationSoundFileTrelai
+    );
+  }
+}
+
+function getNextAlarm() {
   // *** Life and Living channel schedule alarm***
   if (
     // * 9am is the default start time, so catch that cooking show!
@@ -205,11 +227,43 @@ function maybeTriggerAlarm(time, day) {
     (day < 9 && ['05:50', '06:00', '11:50', '12:00'].includes(time)) ||
     (day === 9 && ['05:50', '06:00'].includes(time))
   ) {
-    playAudioFile('notification-lal.mp3');
+    // TODO
   }
 
   // *** Trelai HQ TV channel schedule alarm***
-  if (false) {
-    playAudioFile('notification-trelai.mp3');
+  if (
+    (day === 1 &&
+      ['12:50', '13:00', '16:50', '17:00', '17:20', '17:30'].includes(time)) ||
+    (day === 2 && ['06:20', '06:30', '06:50', '07:00'].includes(time)) ||
+    (day === 3 && ['06:20', '06:30'].includes(time)) ||
+    (day === 4 &&
+      ['06:20', '06:30', '06:50', '07:00', '16:50', '17:00'].includes(time)) ||
+    (day === 5 && ['06:20', '06:30', '13:20', '13:30'].includes(time)) ||
+    (day === 6 &&
+      ['06:20', '06:30', '06:50', '07:00', '07:20', '07:30'].includes(time)) ||
+    (day === 7 &&
+      ['06:50', '07:00', '07:50', '08:00', '12:50', '13:00'].includes(time)) ||
+    (day === 8 &&
+      ['06:50', '07:00', '07:20', '07:30', '12:50', '13:00'].includes(time)) ||
+    (day === 9 &&
+      ['05:50', '06:00', '06:20', '06:30', '07:20', '07:30'].includes(time)) ||
+    (day === 10 && ['06:20', '06:30'].includes(time)) ||
+    (day === 18 && ['12:20', '12:30'].includes(time))
+  ) {
+    // TODO
   }
+
+  // TODO: returns [subject, alarmTime, alarmDay]
+  return [];
+}
+
+/**
+ *
+ * @param time {string}
+ * @param day {number}
+ * @param index {number}
+ */
+function peekNextAlarm(time, day, index) {
+  // TODO: returns a string containing "subject at alarmTime" index based on time and day
+  return '';
 }
