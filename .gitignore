@@ -18,5 +18,5 @@
 !*.mp3
 !options.ini
 !package*.json
-!README.md
+!*.md
 !*.mjs
