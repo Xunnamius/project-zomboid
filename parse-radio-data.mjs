@@ -29,4 +29,59 @@ const radioData = await parseStringPromise(
   )
 );
 
+const interactions = {
+  ANG: 'Anger',
+  BOR: 'Boredom',
+  END: 'Endurance',
+  FAT: 'Fatigue',
+  FIT: 'Fitness',
+  HUN: 'Hunger',
+  MOR: 'Morale',
+  STS: 'Stress',
+  FEA: 'Fear',
+  PAN: 'Panic',
+  SAN: 'Sanity',
+  SIC: 'Sickness',
+  PAI: 'Pain',
+  DRU: 'Drunkenness',
+  THI: 'Thirst',
+  UHP: 'Unhappiness',
+  SPR: 'Sprinting',
+  LFT: 'Lightfooted',
+  NIM: 'Nimble',
+  SNE: 'Sneaking',
+  BAA: 'Axe',
+  BUA: 'Blunt',
+  CRP: 'Carpentry',
+  COO: 'Cooking',
+  FRM: 'Farming',
+  DOC: 'Doctor',
+  ELC: 'Electricity',
+  MTL: 'Metalworking',
+  AIM: 'Aiming',
+  REL: 'Reloading',
+  FIS: 'Fishing',
+  TRA: 'Trapping',
+  FOR: 'Foraging',
+  TAI: 'Tailoring',
+  MEC: 'Mechanics',
+  CMB: 'Combat',
+  SPE: 'Spear',
+  SBU: 'SmallBlunt',
+  LBA: 'LongBlade',
+  SBA: 'SmallBlade'
+};
+
+radioData.RadioData.Channels.flatMap((channel) =>
+  channel.ChannelEntry.filter((entry) => entry.$.cat === 'Television')
+).map((entry) => {
+  return {
+    isStartScript: false,
+    name: entry.$.name,
+    broadcasts: entry.ScriptEntry.map((entry) => {
+      return { name: entry.$.name };
+    })
+  };
+});
+
 console.log(radioData);
