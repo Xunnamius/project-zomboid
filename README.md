@@ -6,6 +6,6 @@ previous point.
 
 Also includes a few scripts I use adjacent to my gameplay, like
 [timer.mjs](./timer.mjs) for tracking when TV shows come on and
-[parse-tmr.mjs](./parse-tmr.mjs) for parsing radio broadcast files and getting a
-schedule for when TV shows and radio broadcasts happen and how they affect the
-player.
+[parse-radio-data.mjs](./parse-radio-data.mjs) for parsing radio broadcast files
+and getting a schedule for when TV shows and radio broadcasts happen and how
+they affect the player.
