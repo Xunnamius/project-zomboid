@@ -32,7 +32,7 @@ Affected stats:
 Affected skills: (none)\
 Affected stats: (none)
 #### 8:00 to 8:30 (day 1)
-Affected skills (over 6 ticks):
+Affected skills (across 6 ticks):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -54,7 +54,7 @@ Affected stats:
 Affected skills: (none)\
 Affected stats: (none)
 #### 13:00 to 14:00 (day 1)
-Affected skills (over 9 ticks):
+Affected skills (across 9 ticks):
 ```
 ┌─────────────┬────────┐
 │    skill    │ change │
@@ -94,7 +94,7 @@ Affected stats:
 Affected skills: (none)\
 Affected stats: (none)
 #### 17:00 to 17:30 (day 1)
-Affected skills (over 4 ticks):
+Affected skills (across 4 ticks):
 ```
 ┌───────────────┬────────┐
 │     skill     │ change │
@@ -123,7 +123,7 @@ Affected stats:
 └───────────────┴────────┘
 ```
 #### 17:30 to 18:00 (day 1)
-Affected skills (over 9 ticks):
+Affected skills (across 9 ticks):
 ```
 ┌────────────┬────────┐
 │   skill    │ change │
@@ -171,7 +171,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 6:30 to 7:00 (day 2)
-Affected skills (over 1 tick):
+Affected skills (across 1 tick):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -189,7 +189,7 @@ Affected stats:
 └─────────┴────────┘
 ```
 #### 7:00 to 8:00 (day 2)
-Affected skills (over 9 ticks):
+Affected skills (across 9 ticks):
 ```
 ┌───────────────┬────────┐
 │     skill     │ change │
@@ -232,7 +232,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 6:30 to 7:00 (day 3)
-Affected skills (over 1 tick):
+Affected skills (across 1 tick):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -275,7 +275,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 6:30 to 7:00 (day 4)
-Affected skills (over 7 ticks):
+Affected skills (across 7 ticks):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -297,7 +297,7 @@ Affected stats:
 └───────────────┴────────┘
 ```
 #### 7:00 to 7:30 (day 4)
-Affected skills (over 2 ticks):
+Affected skills (across 2 ticks):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -328,7 +328,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 17:00 to 17:30 (day 4)
-Affected skills (over 5 ticks):
+Affected skills (across 5 ticks):
 ```
 ┌────────────┬────────┐
 │   skill    │ change │
@@ -355,7 +355,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 6:30 to 7:00 (day 5)
-Affected skills (over 3 ticks):
+Affected skills (across 3 ticks):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -378,7 +378,7 @@ Affected stats:
 Affected skills: (none)\
 Affected stats: (none)
 #### 13:30 to 14:00 (day 5)
-Affected skills (over 3 ticks):
+Affected skills (across 3 ticks):
 ```
 ┌─────────────┬────────┐
 │    skill    │ change │
@@ -423,7 +423,7 @@ Affected stats:
 └──────────┴────────┘
 ```
 #### 6:30 to 7:00 (day 6)
-Affected skills (over 9 ticks):
+Affected skills (across 9 ticks):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -445,7 +445,7 @@ Affected stats:
 └───────────┴────────┘
 ```
 #### 7:00 to 7:30 (day 6)
-Affected skills (over 5 ticks):
+Affected skills (across 5 ticks):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -463,7 +463,7 @@ Affected stats:
 └───────────┴────────┘
 ```
 #### 7:30 to 8:00 (day 6)
-Affected skills (over 8 ticks):
+Affected skills (across 8 ticks):
 ```
 ┌────────────┬────────┐
 │   skill    │ change │
@@ -496,7 +496,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 7:00 to 8:00 (day 7)
-Affected skills (over 2 ticks):
+Affected skills (across 2 ticks):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -516,7 +516,7 @@ Affected stats:
 └───────────┴────────┘
 ```
 #### 8:00 to 8:30 (day 7)
-Affected skills (over 7 ticks):
+Affected skills (across 7 ticks):
 ```
 ┌───────────────┬────────┐
 │     skill     │ change │
@@ -542,7 +542,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 13:00 to 14:00 (day 7)
-Affected skills (over 5 ticks):
+Affected skills (across 5 ticks):
 ```
 ┌──────────┬────────┐
 │  skill   │ change │
@@ -582,7 +582,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 7:00 to 7:30 (day 8)
-Affected skills (over 1 tick):
+Affected skills (across 1 tick):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -592,7 +592,7 @@ Affected skills (over 1 tick):
 ```
 Affected stats: (none)
 #### 7:30 to 8:00 (day 8)
-Affected skills (over 6 ticks):
+Affected skills (across 6 ticks):
 ```
 ┌────────────┬────────┐
 │   skill    │ change │
@@ -614,7 +614,7 @@ Affected stats:
 Affected skills: (none)\
 Affected stats: (none)
 #### 13:00 to 13:30 (day 8)
-Affected skills (over 8 ticks):
+Affected skills (across 8 ticks):
 ```
 ┌─────────────┬────────┐
 │    skill    │ change │
@@ -650,7 +650,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 6:00 to 6:30 (day 9)
-Affected skills (over 1 tick):
+Affected skills (across 1 tick):
 ```
 ┌──────────┬────────┐
 │  skill   │ change │
@@ -667,7 +667,7 @@ Affected stats:
 └──────────┴────────┘
 ```
 #### 6:30 to 7:30 (day 9)
-Affected skills (over 1 tick):
+Affected skills (across 1 tick):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -677,7 +677,7 @@ Affected skills (over 1 tick):
 ```
 Affected stats: (none)
 #### 7:30 to 8:00 (day 9)
-Affected skills (over 3 ticks):
+Affected skills (across 3 ticks):
 ```
 ┌───────────────┬────────┐
 │     skill     │ change │
@@ -723,7 +723,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 6:30 to 7:00 (day 10)
-Affected skills (over 1 tick):
+Affected skills (across 1 tick):
 ```
 ┌───────────┬────────┐
 │   skill   │ change │
@@ -885,7 +885,7 @@ Affected stats: (none)
 Affected skills: (none)\
 Affected stats: (none)
 #### 12:30 to 13:00 (day 18)
-Affected skills (over 1 tick):
+Affected skills (across 1 tick):
 ```
 ┌───────────────┬────────┐
 │     skill     │ change │

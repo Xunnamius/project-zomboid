@@ -197,10 +197,8 @@ function clearLineAndWrite(str) {
 function maybeTriggerAlarm(time, day) {
   // *** Life and Living channel schedule alarm***
   if (
-    // * 9:00 is the default start time, so catch that cooking show!
-    (day === 1 && ['09:00', '23:50'].includes(time)) ||
-    // * I think there's a fishing show that comes on at midnight the 1st day
-    (day === 2 && time === '00:00') ||
+    // * 9am is the default start time, so catch that cooking show!
+    (day === 1 && time === '09:00') ||
     // * Skip the 6pm time slot on the 4th and 8th days
     (day < 9 && day !== 4 && day !== 8 && ['17:50', '18:00'].includes(time)) ||
     // * Issue notifications until the media blackout occurs

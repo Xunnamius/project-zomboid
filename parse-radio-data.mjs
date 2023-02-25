@@ -211,7 +211,7 @@ data.forEach((show) => {
 
       console.log(
         `${prefix}#### ${startTime} to ${endTime} (day ${day})\nAffected skills${
-          ticks > 0 ? ` (over ${ticks} tick${ticks > 1 ? 's' : ''})` : ''
+          ticks > 0 ? ` (across ${ticks} tick${ticks > 1 ? 's' : ''})` : ''
         }:${
           skillInteractions.length
             ? `\n${getTable(skillInteractions)}`
