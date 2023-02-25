@@ -148,11 +148,12 @@ const data = (
 });
 
 data.forEach((show) => {
-  show.scripts.forEach((script) => {
+  console.log('#', show.name);
+
+  show.scripts.forEach((script, scriptIndex) => {
     let previousDay = 0;
 
-    console.log(show.name, '-', script.name);
-    console.log('---');
+    console.log('##', show.name, '-', script.name);
 
     script.broadcasts.forEach(({ day, startTime, endTime, lines }) => {
       let ticks = 0;
@@ -202,24 +203,30 @@ data.forEach((show) => {
 
       let prefix = '';
 
-      if (previousDay && day !== previousDay) {
-        prefix = '---\n\n\n\n\n---\n---\n';
+      if (day !== previousDay) {
+        prefix = `### DAY ${day}\n`;
       }
 
       previousDay = day;
 
       console.log(
-        `${prefix}[day ${day}] ${startTime} to ${endTime}\nSkill ticks: ${ticks}\nAffected skills:${
+        `${prefix}#### ${startTime} to ${endTime} (day ${day})\nAffected skills${
+          ticks > 0 ? ` (over ${ticks} tick${ticks > 1 ? 's' : ''})` : ''
+        }:${
           skillInteractions.length
             ? `\n${getTable(skillInteractions)}`
-            : ' (none)'
+            : ' (none)\\'
         }\nAffected stats:${
           statInteractions.length
             ? `\n${getTable(statInteractions)}`
             : ' (none)'
-        }\n---`
+        }`
       );
     });
+
+    if (!script.broadcasts.length) {
+      console.log('(no broadcasts found)');
+    }
   });
 });
 
@@ -265,5 +272,5 @@ function getTable(input) {
     result += `${r}\n`;
   }
 
-  return result.trim();
+  return '```\n' + result.trim() + '\n```';
 }
