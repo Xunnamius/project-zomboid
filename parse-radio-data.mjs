@@ -12,23 +12,8 @@ import { fileURLToPath } from 'node:url';
 import { readFile } from 'node:fs/promises';
 import { resolve as resolvePath } from 'node:path';
 import { parseStringPromise } from 'xml2js';
-
-const unknown = Symbol('unknown');
-const radioDataFilePath = process.argv[2];
-
-if (!radioDataFilePath) {
-  throw new Error('invalid or missing radio data xml file path');
-}
-
-const radioData = await parseStringPromise(
-  await readFile(
-    resolvePath(
-      fileURLToPath(new URL('.', import.meta.url)),
-      radioDataFilePath
-    ),
-    { encoding: 'utf8' }
-  )
-);
+import { Console } from 'node:console';
+import { Transform } from 'node:stream';
 
 const SkillInteractions = {
   SPR: 'Sprinting',
@@ -57,7 +42,7 @@ const SkillInteractions = {
   SBA: 'SmallBlade'
 };
 
-const OtherInteractions = {
+const StatInteractions = {
   ANG: 'Anger',
   BOR: 'Boredom',
   END: 'Endurance',
@@ -75,6 +60,23 @@ const OtherInteractions = {
   THI: 'Thirst',
   UHP: 'Unhappiness'
 };
+
+const unknown = Symbol('unknown');
+const radioDataFilePath = process.argv[2];
+
+if (!radioDataFilePath) {
+  throw new Error('invalid or missing radio data xml file path');
+}
+
+const radioData = await parseStringPromise(
+  await readFile(
+    resolvePath(
+      fileURLToPath(new URL('.', import.meta.url)),
+      radioDataFilePath
+    ),
+    { encoding: 'utf8' }
+  )
+);
 
 const data = (
   radioData.RadioData.Channels.flatMap((channel) =>
@@ -112,15 +114,15 @@ const data = (
                       .slice(1);
 
                     const skillInteraction = SkillInteractions[id];
-                    const otherInteraction = OtherInteractions[id];
+                    const statInteraction = StatInteractions[id];
 
                     return {
                       interaction:
-                        skillInteraction || otherInteraction || unknown,
+                        skillInteraction || statInteraction || unknown,
                       type: skillInteraction
                         ? 'skill'
-                        : otherInteraction
-                        ? 'other'
+                        : statInteraction
+                        ? 'stat'
                         : unknown,
                       operation:
                         op === '+'
@@ -147,29 +149,48 @@ data.forEach((show) => {
 
     script.broadcasts.forEach(({ day, startTime, endTime, lines }) => {
       let ticks = 0;
-      let skillInteractions = {};
-      let otherInteractions = {};
+      let skillInteractions = [];
+      let statInteractions = [];
 
       lines.forEach(({ codes }) => {
         codes.forEach(({ interaction, type, operation, number }) => {
-          const target =
-            type === 'skill' ? skillInteractions : otherInteractions;
+          const interactionsObject =
+            type === 'skill' ? skillInteractions : statInteractions;
+
+          let target = interactionsObject.find(
+            ({ skill, stat }) => skill === interaction || stat === interaction
+          );
 
           if (target === undefined) {
-            target[interaction] = 0;
+            target = { [type]: interaction, change: 0 };
           }
 
-          target[interaction] +=
-            (operation === 'subtraction' ? -1 : 1) * number;
+          target.change += (operation === 'subtraction' ? -1 : 1) * number;
         });
       });
 
+      [...skillInteractions, ...statInteractions].forEach(
+        (interactionObject) => {
+          interactionObject.change = `${
+            interactionObject.change > 0
+              ? '+'
+              : interactionObject.change < 0
+              ? '-'
+              : ''
+          }${interactionObject}`;
+        }
+      );
+
       console.log(
-        `[day ${day}] ${startTime} to ${endTime}\nSkills:\n${
-          skillInteractions || '(none)'
-        }\nTicks:\n${ticks}\nOther Interactions:\n${
-          otherInteractions || '(none)'
-        }\n---\n`
+        `[day ${day}] ${startTime} to ${endTime}\nTicks: ${ticks}\nSkills:${
+          skillInteractions.length
+            ? `\n${getTable(skillInteractions)}`
+            : '(none)\n'
+        }Stats:${
+          statInteractions.length
+            ? `\n${getTable(statInteractions)}`
+            : '(none)\n'
+        }---`
       );
     });
   });
@@ -181,4 +202,31 @@ function minutesToTime(time) {
   )
     .toString()
     .padStart(2, '0')}`;
+}
+
+// * https://stackoverflow.com/a/69874540/1367414
+function getTable(input) {
+  // @see https://stackoverflow.com/a/67859384
+  const ts = new Transform({
+    transform(chunk, enc, cb) {
+      cb(null, chunk);
+    }
+  });
+  const logger = new Console({ stdout: ts });
+
+  logger.table(input);
+
+  const table = (ts.read() || '').toString();
+  let result = '';
+
+  for (let row of table.split(/[\r\n]+/)) {
+    let r = row.replace(/[^┬]*┬/, '┌');
+    r = r.replace(/^├─*┼/, '├');
+    r = r.replace(/│[^│]*/, '');
+    r = r.replace(/^└─*┴/, '└');
+    r = r.replace(/'/g, ' ');
+    result += `${r}\n`;
+  }
+
+  return result;
 }
