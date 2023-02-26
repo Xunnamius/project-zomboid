@@ -45,8 +45,8 @@ const alarmFiles = {
 
 // ! Must be in ascending chronological order
 const alarmEvents = [
-  // * 9am is the default start time, so catch that cooking show!
-  { day: 1, time: '09:00', channel: channelLifeAndLiving },
+  // * Some events are prepended to this array depending on the starting time
+
   { day: 1, time: '11:50', channel: channelLifeAndLiving },
   { day: 1, time: '12:00', channel: channelLifeAndLiving },
   { day: 1, time: '12:50', channel: channelTrelaiHqTv },
@@ -134,10 +134,10 @@ const alarmEvents = [
   { day: 8, time: '07:00', channel: channelTrelaiHqTv },
   { day: 8, time: '07:20', channel: channelTrelaiHqTv },
   { day: 8, time: '07:30', channel: channelTrelaiHqTv },
-  { day: 8, time: '11:50', channel: channelLifeAndLiving },
-  { day: 8, time: '12:00', channel: channelLifeAndLiving },
   { day: 8, time: '12:50', channel: channelTrelaiHqTv },
   { day: 8, time: '13:00', channel: channelTrelaiHqTv },
+  { day: 8, time: '17:50', channel: channelLifeAndLiving },
+  { day: 8, time: '18:00', channel: channelLifeAndLiving },
 
   // * Media blackout begins
   { day: 9, time: '05:50', channel: channelLifeAndLiving },
@@ -181,6 +181,30 @@ if (startTimeArgv) {
 
   startTimeHours = hours;
   startTimeMinutes = minutes;
+}
+
+if (Number(startDayArgv) === 1) {
+  if (startTimeHours < 6) {
+    alarmEvents.unshift({
+      day: 1,
+      time: '06:00',
+      channel: channelLifeAndLiving
+    });
+
+    alarmEvents.unshift({
+      day: 1,
+      time: '05:50',
+      channel: channelLifeAndLiving
+    });
+  }
+
+  if (startTimeHours < 11 && startTimeMinutes < 50) {
+    alarmEvents.unshift({
+      day: 1,
+      time: `${pad(startTimeHours)}:${pad(startTimeMinutes)}`,
+      channel: channelLifeAndLiving
+    });
+  }
 }
 
 readline.emitKeypressEvents(process.stdin);
