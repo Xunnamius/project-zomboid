@@ -1,19 +1,19 @@
-DaysSinceStart = 11
+DaysSinceStart = 12
 LvObfuscation = false
 93200,1,1,none,-1
-98000,1,1,main,0,none,-1
-101200,1,1,main,0,7f5c8589-e597-4458-8445-5ae416b674d4,-1
-89400,1,1,main,0,none,-1
-200,1,1,main,0,035179f6-fff0-4b8c-a508-0dad3db64a20,-1
-201,1,1,main,0,none,-1
-203,1,1,main,0,dbd1c43a-70d6-4244-b5d1-025f4d874683,-1
-204,1,1,main,0,b8261d70-8f3f-4d1f-b44c-29da1125e144,-1
-205,1,1,main,0,d3bde9de-3bc4-4916-a31a-968e7abaa816,-1
+98000,1,1,none,-1
+101200,1,1,7f5c8589-e597-4458-8445-5ae416b674d4,-1
+89400,1,1,none,-1
+200,1,1,main,0,3de3297e-8084-4923-a26b-54d8a7e07190,-1
+201,1,1,none,-1
+203,1,1,dbd1c43a-70d6-4244-b5d1-025f4d874683,-1
+204,1,1,main,0,0ff48c59-a40d-4e51-bb25-3b8a9499c119,-1
+205,1,1,d3bde9de-3bc4-4916-a31a-968e7abaa816,-1
 91200,1,1,9fcab512-9538-4fa1-a205-e6af241a5fe6,-1
 107600,1,1,none,-1
 95000,1,1,none,-1
 97700,1,1,Day0,12,none,-1
 269,1,1,none,-1
 936,1,365,static,24,none,-1
-626,1,1,init_infection,0,da26e66a-9ba1-4fe9-8804-dda46ba7db02,-1
-96800,1,1,GEN-679394,6
+626,1,1,init_infection,0,fdb295ba-77c6-4aa2-811f-ff7b1c05dbce,-1
+96800,1,1,GEN-523842,-1
