@@ -16,4 +16,4 @@ LvObfuscation = false
 269,1,1,none,-1
 936,1,1,init_infection,0,none,-1
 626,1,1,init_infection,0,ec0061df-7d76-412e-82f4-30ab081d1546,-1
-96800,1,1,GEN-205730,-1
+96800,1,1,GEN-144372,-1
