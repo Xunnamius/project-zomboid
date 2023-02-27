@@ -116,7 +116,6 @@ mods
 	mod = eggonsAllDoorsAreYours,
 	mod = eggonsModdingUtils,
 	mod = MezzHairColors,
-	mod = ExpandedHelicopterEvents,
 	mod = ExtraMapSymbols,
 	mod = ExtraMapSymbolsUI,
 	mod = EN_Newburbs,
@@ -225,12 +224,14 @@ mods
 	mod = TheStar,
 	mod = wildberries,
 	mod = FC4WT,
-	mod = VaccinDrReapers,
 	mod = AkyFingersFem,
 	mod = AkyFingers,
 	mod = TMC_Trolley,
 	mod = tkTiles_01,
 	mod = ChangeSandBox,
+	mod = ExpandedHelicopterEvents,
+	mod = zReMeleeEXPSharebykERHUS,
+	mod = ReModVaccinDrReapersMP,
 }
 
 maps
