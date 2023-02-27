@@ -6936,3 +6936,220 @@ table.insert(log, {
 	{ type = "reg_obj", id = 44, obj = "WallCracks" }
 	{ type = "reg_obj", id = 45, obj = "Flowerbed" }
 };
+log = log or {};
+table.insert(log, {
+	-- -------------------------------------------------------
+	-- Time: 2023/02/26 18:22:52
+	{
+		type = "info",
+		timeStamp = "2023/02/26 18:22:52",
+		saveWorld = "23-02-2023_05-52-12",
+		worldVersion = 195,
+		hasErrored = false,
+		itemMods = {
+			"EN_Flags_Craft",
+			"AwesomeTime",
+			"Authentic Z - Current",
+			"ExpandedHelicopterEvents",
+			"pz-vanilla",
+			"Brita_2",
+			"78amgeneralM35A2",
+			"70barracuda",
+			"MoreSmokes",
+			"89fordBronco",
+			"MonmouthCounty_new",
+			"74amgeneralM151A2",
+			"93townCar",
+			"89trooper",
+			"ImprovisedFlooring",
+			"AquatsarYachtClub",
+			"97bushmaster",
+			"tsarslib",
+			"ISA_41",
+			"FRUsedCars",
+			"Pitstop",
+			"manageContainers",
+			"SecretZ_v2",
+			"92amgeneralM998",
+			"PantryPacking",
+			"ReModVaccinDrReapersMP",
+			"86oshkoshP19A",
+			"isoContainers",
+			"82oshkoshM911",
+			"82jeepJ10",
+			"CrashedCarsMod",
+			"49powerWagon",
+			"83amgeneralM923",
+			"zReBetterLockpicking",
+			"BetterFlashlights",
+			"PertsPartyTiles",
+			"eggonsAllDoorsAreYours",
+			"VaccinDrReapers",
+			"Better Belts",
+			"ImprovisedGlass",
+			"MoreLockManagement",
+			"autotsartrailers",
+			"ATA_Bus",
+			"BB_CommonSense",
+			"70dodge",
+			"CoolBag",
+			"92nissanGTR",
+			"BCGTools",
+			"ImprovisedCabinetry",
+			"TMC_Trolley",
+			"DRK_1",
+			"RealMetalworking",
+			"TurningTime",
+			"Fantasiado ST. Bernard's Hill",
+			"RS_WaterCistern",
+			"EerieCountry",
+			"88chevyS10",
+			"Trelai_4x4_Steam",
+			"PocketTVVCR",
+			"89def110",
+			"FRUsedCarsFT",
+			"84merc",
+			"WaterDispenser",
+			"67commando",
+			"SaveOurStation_KnoxCountry",
+			"Ladders",
+			"noirrsling",
+			"87cruiser",
+			"lakeivytownship",
+			"ImprovisedPaint",
+			"NVG",
+			"Advanced_trajectory_Fix",
+			"FencingKits",
+			"DRAW_ON_MAP",
+			"KingsmouthKY",
+			"85merc",
+			"TicklistMod",
+			"HandCrankFlashlights",
+			"BedfordFalls",
+			"NewEkron",
+			"RidingMower",
+			"Computer",
+			"SkillRecoveryJournal",
+			"SaveOurStation_Core",
+			"BLTAnnotations",
+			"89def90",
+		},
+	},
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabTestResultPositive", registeryID = 213, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeReusableWithPlainVaccine", registeryID = 230, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabBooks.NotebookVaccine2", registeryID = 6789, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabBooks.NotebookVaccine4", registeryID = 6790, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabBooks.NotebookVaccine3", registeryID = 6791, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabBooks.NotebookVaccine5", registeryID = 6792, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.FrnGolgNugget", registeryID = 303, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabChromatograph", registeryID = 314, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabSpectrometer", registeryID = 349, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeReusableWithTaintedBlood", registeryID = 393, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.CmpSyringeWithSerum", registeryID = 6793, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabItems.FormaForJarLid", registeryID = 6794, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabItems.FormaForFlask", registeryID = 6795, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabItems.HeadHeavyHammer", registeryID = 6796, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabPosterWashHands", registeryID = 730, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeReusableWithBlood", registeryID = 789, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpTestTubeWithTaintedBlood", registeryID = 813, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpFlaskWithSodiumHypochlorite", registeryID = 864, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.CmpTestTubeWithRareBlood", registeryID = 6797, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpChlorineTablets", registeryID = 986, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpTestTubeWithInfectedBlood", registeryID = 1008, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabFlaskWater", registeryID = 1051, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabPlasticBagWithRemains", registeryID = 1054, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeWithCure", registeryID = 1069, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeWithAdvancedVaccine", registeryID = 1108, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabTestTubeDirty", registeryID = 1479, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabFlask", registeryID = 1557, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeReusableWithCure", registeryID = 1586, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "CTorch.CrankTorchARG", registeryID = 6798, existsVanilla = false, isModded = true, modID = "HandCrankFlashlights", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpFlaskWithAmmoniumSulfate", registeryID = 1650, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeReusableWithQualityVaccine", registeryID = 1669, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.FormaForTestTube", registeryID = 6799, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabSyringe", registeryID = 1787, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.kerBlacksmithTongs", registeryID = 6800, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.MatInfectedBlood", registeryID = 1985, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabCentrifuge", registeryID = 2111, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeWithPlainVaccine", registeryID = 2137, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.ChSodiumHydroxideBag", registeryID = 2213, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabBooks.BkVirologyCourses2", registeryID = 2439, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabBooks.BkVirologyCourses1", registeryID = 2440, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabPosterHumanBrain", registeryID = 2598, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "TheyKnew.Zomboxivir", registeryID = 6801, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.ChSulfuricAcidCan", registeryID = 2901, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.FormaForSyringeReusable", registeryID = 6802, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabSyringeUsed", registeryID = 3132, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpFlaskWithHydrogenPeroxide", registeryID = 3153, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpFlaskWithBloodCells", registeryID = 3394, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.FormaHeadHeavyHammer", registeryID = 6803, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "CTorch.CrankTorch6", registeryID = 6804, existsVanilla = false, isModded = true, modID = "HandCrankFlashlights", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabBooks.BkLaboratoryEquipment2", registeryID = 3908, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabBooks.BkLaboratoryEquipment1", registeryID = 3909, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabBooks.BkLaboratoryEquipment3", registeryID = 3914, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.CmpSyringeReusableWithSerum", registeryID = 6805, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeWithQualityVaccine", registeryID = 4055, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.kerBlacksmithTigel", registeryID = 6806, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabSyringePack", registeryID = 4203, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.LabTestTubePack", registeryID = 6807, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.FrnSilverNugget", registeryID = 4476, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "TheyKnew.MysteriousSatchel", registeryID = 6808, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabPosterPeriodicTable", registeryID = 4505, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.HeadFireAxe", registeryID = 6809, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabFlaskDirty", registeryID = 4544, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeReusableWithAdvancedVaccine", registeryID = 4576, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabPosterBiohazard", registeryID = 4609, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.ChHydrochloricAcidCan", registeryID = 4624, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "TheyKnew.Zomboxycycline", registeryID = 6810, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabSyringeReusable", registeryID = 4888, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabTestResultNegative", registeryID = 4997, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpFlaskWithBloodPlasma", registeryID = 5208, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabBooks.NotebookVaccineStart", registeryID = 6811, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpAlbuminPills", registeryID = 5451, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabBooks.BkChemistryCourse", registeryID = 5488, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabWorkbench", registeryID = 5636, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.FormaHeadFireAxe", registeryID = 6812, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.MatTaintedBlood", registeryID = 5680, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeWithBlood", registeryID = 5797, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "CTorch.CrankTorchBox", registeryID = 6813, existsVanilla = false, isModded = true, modID = "HandCrankFlashlights", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpSyringeWithTaintedBlood", registeryID = 5889, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.MatRareBlood", registeryID = 6814, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.ChAmmonia", registeryID = 5978, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabChemistrySet", registeryID = 5980, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabTestTube", registeryID = 6051, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabMuffleFurnace", registeryID = 6196, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabSyringeReusableUsed", registeryID = 6204, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpFlaskWithLeukocytes", registeryID = 6208, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.CmpTestTubeWithAntibodies", registeryID = 6210, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "LabItems.FormaForNeedle", registeryID = 6815, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabEasel", registeryID = 6350, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabDecorWhiteboard", registeryID = 6392, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "TheyKnew.MysteriousHazmat", registeryID = 6816, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabItems.FormaForSmallMetallList", registeryID = 6817, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "LabItems.FormaForJar", registeryID = 6818, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabGarbageBagWithRemains", registeryID = 6644, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.LabMicroscope", registeryID = 6722, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "modchange_item", oldModID = "VaccinDrReapers", fulltype = "LabItems.MatShatteredGlass", registeryID = 6744, existsVanilla = false, isModded = true, modID = "ReModVaccinDrReapersMP", obsolete = false, removed = false, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabDecorCaduceus", registeryID = 421, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabDecorCaduceus", registeryID = 421, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.Mov_Morge2", registeryID = 556, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.Mov_Morge2", registeryID = 556, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.Mov_Morge1", registeryID = 557, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.Mov_Morge1", registeryID = 557, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabNeonSignPizza", registeryID = 1395, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabNeonSignPizza", registeryID = 1395, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.FrnGolgIngot", registeryID = 1486, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.FrnGolgIngot", registeryID = 1486, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.FrnIngotMold", registeryID = 2087, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.FrnIngotMold", registeryID = 2087, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabNeonSignPharmacy", registeryID = 2154, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabNeonSignPharmacy", registeryID = 2154, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabDecorSkeleton", registeryID = 3312, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabDecorSkeleton", registeryID = 3312, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabDecorVirusModel", registeryID = 4230, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabDecorVirusModel", registeryID = 4230, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.FrnSilverIngot", registeryID = 5093, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.FrnSilverIngot", registeryID = 5093, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabPosterSexyNurse", registeryID = 6089, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabPosterSexyNurse", registeryID = 6089, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+};
