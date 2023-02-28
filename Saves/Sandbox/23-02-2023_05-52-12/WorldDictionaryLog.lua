@@ -7519,3 +7519,125 @@ table.insert(log, {
 	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabPosterSexyNurse", registeryID = 6089, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
 	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabPosterSexyNurse", registeryID = 6089, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
 };
+log = log or {};
+table.insert(log, {
+	-- -------------------------------------------------------
+	-- Time: 2023/02/27 19:16:07
+	{
+		type = "info",
+		timeStamp = "2023/02/27 19:16:07",
+		saveWorld = "23-02-2023_05-52-12",
+		worldVersion = 195,
+		hasErrored = false,
+		itemMods = {
+			"EN_Flags_Craft",
+			"AwesomeTime",
+			"Authentic Z - Current",
+			"ExpandedHelicopterEvents",
+			"pz-vanilla",
+			"Brita_2",
+			"78amgeneralM35A2",
+			"70barracuda",
+			"MoreSmokes",
+			"89fordBronco",
+			"MonmouthCounty_new",
+			"74amgeneralM151A2",
+			"93townCar",
+			"89trooper",
+			"ImprovisedFlooring",
+			"AquatsarYachtClub",
+			"97bushmaster",
+			"tsarslib",
+			"ISA_41",
+			"FRUsedCars",
+			"Pitstop",
+			"manageContainers",
+			"SecretZ_v2",
+			"92amgeneralM998",
+			"PantryPacking",
+			"ReModVaccinDrReapersMP",
+			"86oshkoshP19A",
+			"isoContainers",
+			"82oshkoshM911",
+			"82jeepJ10",
+			"CrashedCarsMod",
+			"49powerWagon",
+			"83amgeneralM923",
+			"zReBetterLockpicking",
+			"BetterFlashlights",
+			"PertsPartyTiles",
+			"eggonsAllDoorsAreYours",
+			"VaccinDrReapers",
+			"Better Belts",
+			"ImprovisedGlass",
+			"MoreLockManagement",
+			"autotsartrailers",
+			"ATA_Bus",
+			"BB_CommonSense",
+			"70dodge",
+			"CoolBag",
+			"92nissanGTR",
+			"BCGTools",
+			"ImprovisedCabinetry",
+			"TMC_Trolley",
+			"DRK_1",
+			"RealMetalworking",
+			"TurningTime",
+			"Fantasiado ST. Bernard's Hill",
+			"RS_WaterCistern",
+			"EerieCountry",
+			"88chevyS10",
+			"Trelai_4x4_Steam",
+			"PocketTVVCR",
+			"89def110",
+			"FRUsedCarsFT",
+			"84merc",
+			"WaterDispenser",
+			"67commando",
+			"SaveOurStation_KnoxCountry",
+			"Ladders",
+			"noirrsling",
+			"87cruiser",
+			"lakeivytownship",
+			"ImprovisedPaint",
+			"NVG",
+			"Advanced_trajectory_Fix",
+			"FencingKits",
+			"DRAW_ON_MAP",
+			"KingsmouthKY",
+			"85merc",
+			"TicklistMod",
+			"HandCrankFlashlights",
+			"BedfordFalls",
+			"NewEkron",
+			"RidingMower",
+			"Computer",
+			"SkillRecoveryJournal",
+			"SaveOurStation_Core",
+			"BLTAnnotations",
+			"89def90",
+		},
+	},
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabDecorCaduceus", registeryID = 421, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabDecorCaduceus", registeryID = 421, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.Mov_Morge2", registeryID = 556, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.Mov_Morge2", registeryID = 556, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.Mov_Morge1", registeryID = 557, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.Mov_Morge1", registeryID = 557, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabNeonSignPizza", registeryID = 1395, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabNeonSignPizza", registeryID = 1395, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.FrnGolgIngot", registeryID = 1486, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.FrnGolgIngot", registeryID = 1486, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.FrnIngotMold", registeryID = 2087, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.FrnIngotMold", registeryID = 2087, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabNeonSignPharmacy", registeryID = 2154, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabNeonSignPharmacy", registeryID = 2154, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabDecorSkeleton", registeryID = 3312, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabDecorSkeleton", registeryID = 3312, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabDecorVirusModel", registeryID = 4230, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabDecorVirusModel", registeryID = 4230, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.FrnSilverIngot", registeryID = 5093, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.FrnSilverIngot", registeryID = 5093, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = false, fulltype = "LabItems.LabPosterSexyNurse", registeryID = 6089, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+	{ type = "removed_item", scriptMissing = true, fulltype = "LabItems.LabPosterSexyNurse", registeryID = 6089, existsVanilla = false, isModded = true, modID = "VaccinDrReapers", obsolete = false, removed = true, isLoaded = false }
+};
