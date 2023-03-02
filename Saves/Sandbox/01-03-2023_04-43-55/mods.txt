@@ -235,7 +235,6 @@ mods
 	mod = zReMeleeEXPSharebykERHUS,
 	mod = ReModVaccinDrReapersMP,
 	mod = Muldraugh-Westoutskirts ShippingCo,
-	mod = ProjectElevator,
 	mod = agrotsar,
 	mod = Cruise boat,
 	mod = DeadinHongKong,
