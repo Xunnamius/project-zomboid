@@ -184,6 +184,12 @@ if (startTimeArgv) {
 }
 
 if (Number(startDayArgv) === 1) {
+  if (startTimeHours < 8) {
+    alarmEvents.unshift({ day: 1, time: '8:00', channel: channelTrelaiHqTv });
+
+    alarmEvents.unshift({ day: 1, time: '7:50', channel: channelTrelaiHqTv });
+  }
+
   if (startTimeHours < 6) {
     alarmEvents.unshift({
       day: 1,
