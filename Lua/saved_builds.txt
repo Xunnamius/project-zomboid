@@ -1,3 +1,3 @@
 Burglar:burglar;HighThirst;Underweight;WeakStomach;SpeedDemon;NeedsLessSleep;KeenHearing;
-Firefighter:fireofficer;HighThirst;Underweight;WeakStomach;SpeedDemon;Dextrous;NeedsLessSleep;Lucky;KeenHearing;
+Firefighter:fireofficer;HighThirst;Underweight;ParanoidToker;WeakStomach;ShortSighted;NightVision;FastReader;TVEnthusiast;nimblefingers2;FastLearner;KeenHearing;
 Carpenter:carpenter;HighThirst;Underweight;ParanoidToker;WeakStomach;NightVision;FastReader;TVEnthusiast;nimblefingers2;FastLearner;KeenHearing;
