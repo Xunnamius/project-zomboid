@@ -134,6 +134,8 @@ const alarmEvents = [
   { day: 8, time: '07:00', channel: channelTrelaiHqTv },
   { day: 8, time: '07:20', channel: channelTrelaiHqTv },
   { day: 8, time: '07:30', channel: channelTrelaiHqTv },
+  { day: 8, time: '07:50', channel: channelTrelaiHqTv },
+  { day: 8, time: '08:00', channel: channelTrelaiHqTv },
   { day: 8, time: '12:50', channel: channelTrelaiHqTv },
   { day: 8, time: '13:00', channel: channelTrelaiHqTv },
   { day: 8, time: '17:50', channel: channelLifeAndLiving },
