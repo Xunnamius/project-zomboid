@@ -7078,3 +7078,124 @@ table.insert(log, {
 	{ type = "reg_obj", id = 44, obj = "WallCracks" }
 	{ type = "reg_obj", id = 45, obj = "Flowerbed" }
 };
+log = log or {};
+table.insert(log, {
+	-- -------------------------------------------------------
+	-- Time: 2023/03/06 01:19:17
+	{
+		type = "info",
+		timeStamp = "2023/03/06 01:19:17",
+		saveWorld = "03-03-2023_04-40-44",
+		worldVersion = 195,
+		hasErrored = false,
+		itemMods = {
+			"EN_Flags_Craft",
+			"AwesomeTime",
+			"MoreMaps",
+			"Authentic Z - Current",
+			"ExpandedHelicopterEvents",
+			"pz-vanilla",
+			"Brita_2",
+			"78amgeneralM35A2",
+			"70barracuda",
+			"MoreSmokes",
+			"89fordBronco",
+			"MonmouthCounty_new",
+			"74amgeneralM151A2",
+			"93townCar",
+			"89trooper",
+			"ImprovisedFlooring",
+			"AquatsarYachtClub",
+			"97bushmaster",
+			"tsarslib",
+			"ISA_41",
+			"FRUsedCars",
+			"Pitstop",
+			"manageContainers",
+			"SecretZ_v2",
+			"92amgeneralM998",
+			"PantryPacking",
+			"ReModVaccinDrReapersMP",
+			"86oshkoshP19A",
+			"isoContainers",
+			"82oshkoshM911",
+			"82jeepJ10",
+			"CrashedCarsMod",
+			"49powerWagon",
+			"83amgeneralM923",
+			"zReBetterLockpicking",
+			"BetterFlashlights",
+			"PertsPartyTiles",
+			"eggonsAllDoorsAreYours",
+			"Better Belts",
+			"ImprovisedGlass",
+			"MoreLockManagement",
+			"autotsartrailers",
+			"ATA_Bus",
+			"BB_CommonSense",
+			"70dodge",
+			"CoolBag",
+			"92nissanGTR",
+			"BCGTools",
+			"ImprovisedCabinetry",
+			"TMC_Trolley",
+			"DRK_1",
+			"RealMetalworking",
+			"TurningTime",
+			"Fantasiado ST. Bernard's Hill",
+			"RS_WaterCistern",
+			"EerieCountry",
+			"88chevyS10",
+			"Trelai_4x4_Steam",
+			"PocketTVVCR",
+			"89def110",
+			"FRUsedCarsFT",
+			"84merc",
+			"WaterDispenser",
+			"67commando",
+			"SaveOurStation_KnoxCountry",
+			"HandCrankFlashlights",
+			"agrotsar",
+			"Ladders",
+			"noirrsling",
+			"87cruiser",
+			"lakeivytownship",
+			"ImprovisedPaint",
+			"NVG",
+			"Advanced_trajectory_Fix",
+			"FencingKits",
+			"Xonics Mega Mall",
+			"DRAW_ON_MAP",
+			"KingsmouthKY",
+			"85merc",
+			"TicklistMod",
+			"BedfordFalls",
+			"NewEkron",
+			"RidingMower",
+			"Computer",
+			"SkillRecoveryJournal",
+			"SaveOurStation_Core",
+			"BLTAnnotations",
+			"89def90",
+		},
+	},
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Vest_SamuraiBreastPlate", registeryID = 6928, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Leg_SamuraiShinGuards", registeryID = 6929, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Hat_FurryEars_Zoey", registeryID = 6930, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Hat_BaseballCapSmileyFace", registeryID = 6931, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Hat_BaseballCapSmileyFace_Reverse", registeryID = 6932, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Necklace_NeckProtector", registeryID = 6933, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Tshirt_Wichammer", registeryID = 6934, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Mask_Oni", registeryID = 6935, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Samurai_ZokWarBanner", registeryID = 6936, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Skin_White_Zed_M_Stubble", registeryID = 6937, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.HoodieTied_Buzzers", registeryID = 6938, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.HoodieDOWN_Buzzers", registeryID = 6939, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.HoodieUP_Buzzers", registeryID = 6940, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Hat_BaseballCapSmileyFace_Sideways", registeryID = 6941, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Samurai_WarBanner", registeryID = 6942, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Hat_SamuraiHelmet", registeryID = 6943, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Authentic_HeadphonesNeck4", registeryID = 6944, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Authentic_Headphones4", registeryID = 6945, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "AuthenticZClothing.Gloves_SamaraiArmor_Gauntlets", registeryID = 6946, existsVanilla = false, isModded = true, modID = "Authentic Z - Current", obsolete = false, removed = false, isLoaded = true }
+};
