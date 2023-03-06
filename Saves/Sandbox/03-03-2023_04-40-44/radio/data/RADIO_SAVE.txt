@@ -1,4 +1,4 @@
-DaysSinceStart = 37
+DaysSinceStart = 38
 LvObfuscation = false
 93200,1,1,none,-1
 98000,1,1,none,-1
@@ -15,5 +15,5 @@ LvObfuscation = false
 97700,1,1,Day0,38,none,-1
 269,1,1,none,-1
 936,8,365,static,38,none,-1
-626,1,1,main,18,none,-1
-93000,1,1,GEN-118806,-1
+626,1,1,main,18,7a100265-db50-4f49-913c-6912d349f7b6,-1
+93000,1,1,GEN-932930,-1
