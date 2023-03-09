@@ -9,6 +9,8 @@
 !Lua/saved_modlists.txt
 !Lua/saved_modtags.txt
 !Lua/saved_outfits.txt
+!Server
+!Server/**/*
 !Saves
 !Saves/**/*
 !Sandbox\ Presets
