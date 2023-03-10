@@ -264,15 +264,9 @@ mods
 	mod = WestPointTrailerParkAndVhsStore,
 	mod = Xonics Mega Mall,
 	mod = zhyklighthousebase,
+	mod = HowStrongIsThatWall,
 }
 
 maps
 {
-	map = west_point_expansion_map,
-	map = NewDenver_Connection_map,
-	map = NewDenver_map,
-	map = Rosebery_map,
-	map = Silverton_map,
-	map = Eerie Country_map,
-	map = InGameMaps_Main,
 }
