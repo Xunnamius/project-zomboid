@@ -265,6 +265,8 @@ mods
 	mod = Xonics Mega Mall,
 	mod = zhyklighthousebase,
 	mod = HowStrongIsThatWall,
+	mod = BigNoiseTrap,
+	mod = RemoteCraftedV4,
 }
 
 maps
