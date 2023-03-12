@@ -7312,3 +7312,246 @@ table.insert(log, {
 	{ type = "reg_item", fulltype = "Base.BigNoiseTrap", registeryID = 6954, existsVanilla = false, isModded = true, modID = "BigNoiseTrap", obsolete = false, removed = false, isLoaded = true }
 	{ type = "reg_item", fulltype = "MonmouthClothing.Skin_F_Amelora", registeryID = 6955, existsVanilla = false, isModded = true, modID = "MonmouthCounty_new", obsolete = false, removed = false, isLoaded = true }
 };
+log = log or {};
+table.insert(log, {
+	-- -------------------------------------------------------
+	-- Time: 2023/03/12 06:21:11
+	{
+		type = "info",
+		timeStamp = "2023/03/12 06:21:11",
+		saveWorld = "03-03-2023_04-40-44",
+		worldVersion = 195,
+		hasErrored = false,
+		itemMods = {
+			"EN_Flags_Craft",
+			"AwesomeTime",
+			"MoreMaps",
+			"Authentic Z - Current",
+			"ExpandedHelicopterEvents",
+			"pz-vanilla",
+			"Brita_2",
+			"78amgeneralM35A2",
+			"70barracuda",
+			"MoreSmokes",
+			"89fordBronco",
+			"MonmouthCounty_new",
+			"74amgeneralM151A2",
+			"93townCar",
+			"89trooper",
+			"ImprovisedFlooring",
+			"AquatsarYachtClub",
+			"97bushmaster",
+			"tsarslib",
+			"ISA_41",
+			"FRUsedCars",
+			"Pitstop",
+			"manageContainers",
+			"SecretZ_v2",
+			"92amgeneralM998",
+			"PantryPacking",
+			"ReModVaccinDrReapersMP",
+			"86oshkoshP19A",
+			"isoContainers",
+			"82oshkoshM911",
+			"82jeepJ10",
+			"CrashedCarsMod",
+			"49powerWagon",
+			"83amgeneralM923",
+			"zReBetterLockpicking",
+			"BetterFlashlights",
+			"PertsPartyTiles",
+			"eggonsAllDoorsAreYours",
+			"Better Belts",
+			"ImprovisedGlass",
+			"MoreLockManagement",
+			"autotsartrailers",
+			"ATA_Bus",
+			"BB_CommonSense",
+			"70dodge",
+			"CoolBag",
+			"92nissanGTR",
+			"BCGTools",
+			"ImprovisedCabinetry",
+			"TMC_Trolley",
+			"DRK_1",
+			"RealMetalworking",
+			"TurningTime",
+			"Fantasiado ST. Bernard's Hill",
+			"RS_WaterCistern",
+			"EerieCountry",
+			"88chevyS10",
+			"Trelai_4x4_Steam",
+			"PocketTVVCR",
+			"89def110",
+			"FRUsedCarsFT",
+			"84merc",
+			"WaterDispenser",
+			"67commando",
+			"SaveOurStation_KnoxCountry",
+			"HandCrankFlashlights",
+			"agrotsar",
+			"Ladders",
+			"noirrsling",
+			"87cruiser",
+			"lakeivytownship",
+			"ImprovisedPaint",
+			"NVG",
+			"Advanced_trajectory_Fix",
+			"FencingKits",
+			"Xonics Mega Mall",
+			"DRAW_ON_MAP",
+			"KingsmouthKY",
+			"85merc",
+			"TicklistMod",
+			"BedfordFalls",
+			"NewEkron",
+			"RidingMower",
+			"Computer",
+			"SkillRecoveryJournal",
+			"SaveOurStation_Core",
+			"BLTAnnotations",
+			"89def90",
+			"BigNoiseTrap",
+			"RemoteCraftedV4",
+		},
+	},
+	{ type = "reg_item", fulltype = "Base.Messkit_Loose", registeryID = 6956, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.NV_GPNVG_18_OFF", registeryID = 6957, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Rose_Jacket_ON", registeryID = 6958, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Off_Dress", registeryID = 6959, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Rose_Cap", registeryID = 6960, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Formal_Shirts", registeryID = 6961, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Round_Cap_Police", registeryID = 6962, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Check_Shirts", registeryID = 6963, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Jacket", registeryID = 6964, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Leg_ON", registeryID = 6965, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Calvin_Panties", registeryID = 6966, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Lined_Tights", registeryID = 6967, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Chara_Jacket_ON", registeryID = 6968, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Mask", registeryID = 6969, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Self_Rope", registeryID = 6970, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Check_Pants_Rolled", registeryID = 6971, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.MIL_Pants_Rolled", registeryID = 6972, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Rose_Shoes", registeryID = 6973, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Knit_Dress", registeryID = 6974, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Gorka5_Jacket_ON", registeryID = 6975, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Shooting_Shirts", registeryID = 6976, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Pants_Rolled", registeryID = 6977, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Glove_3M", registeryID = 6978, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Glove_Mechanix", registeryID = 6979, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Glove_Fisher", registeryID = 6980, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Off_Dress_ON", registeryID = 6981, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Bandolier_ON", registeryID = 6982, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Round_Cap_Police_Back", registeryID = 6983, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Gorka5_Jacket", registeryID = 6984, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Knee", registeryID = 6985, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Mask_ON", registeryID = 6986, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Cut_Dress_ON", registeryID = 6987, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Neck_Shirts_ON", registeryID = 6988, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Gasmask_Set", registeryID = 6989, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Flex_Pants_Rolled", registeryID = 6990, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Round_Cap_Fisher_Back", registeryID = 6991, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Glove_Mustang", registeryID = 6992, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Neck_Hoodie", registeryID = 6993, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bandit_Coat", registeryID = 6994, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Glove_Mechanix_Pact", registeryID = 6995, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Boots", registeryID = 6996, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Knit_Dress_ON", registeryID = 6997, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Arm", registeryID = 6998, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.BR_Skirts_Long", registeryID = 6999, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Arm_ON", registeryID = 7000, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.TEC_Jacket_ON", registeryID = 7001, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bandit_Coat_ON", registeryID = 7002, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Pants", registeryID = 7003, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Black_Long_Shirts", registeryID = 7004, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Huntrite_Jacket_ON", registeryID = 7005, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Field_Shirts_ON", registeryID = 7006, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Bandolier", registeryID = 7007, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Calvin_Bra", registeryID = 7008, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Jacket", registeryID = 7009, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Knee_ON", registeryID = 7010, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Skirts_Side", registeryID = 7011, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Adidas_Shirts", registeryID = 7012, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Multi_Carrier_Food", registeryID = 7013, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Messkit_B_Loose", registeryID = 7014, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Skirts_SC_Long", registeryID = 7015, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Jacket_ON", registeryID = 7016, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Worn_Beanie", registeryID = 7017, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Nylon_Stocking_Ripped", registeryID = 7018, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Neck_Hoodie_ON", registeryID = 7019, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Knee_ON", registeryID = 7020, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Round_Cap_Fisher", registeryID = 7021, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.TEC_Jacket", registeryID = 7022, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Skirts_SC", registeryID = 7023, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.MIL_Pants", registeryID = 7024, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Field_Shirts", registeryID = 7025, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Worn_Beanie_Full", registeryID = 7026, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Fast_Pants", registeryID = 7027, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Ham_Radio", registeryID = 7028, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Armor", registeryID = 7029, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Multi_Carrier_Wood", registeryID = 7030, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Adidas_Shirts_ON", registeryID = 7031, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Chara_Jacket", registeryID = 7032, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Arm_Warmer", registeryID = 7033, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Fast_Pants_Rolled", registeryID = 7034, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Cut_Dress", registeryID = 7035, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.G3_Pants", registeryID = 7036, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Backpack", registeryID = 7037, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Cargo_Pants_Rolled", registeryID = 7038, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Sweater_Tights", registeryID = 7039, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Pencil_Skirts_Long", registeryID = 7040, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Bag", registeryID = 7041, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_IDA_ON", registeryID = 7042, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Sweater_Stocking_Ripped", registeryID = 7043, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Multi_Carrier_Ammo", registeryID = 7044, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Neck_Shirts", registeryID = 7045, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Skirts_Side_Long", registeryID = 7046, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Chain_Coat", registeryID = 7047, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Ring_Bra", registeryID = 7048, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Knife_ON", registeryID = 7049, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Rose_Jacket", registeryID = 7050, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Huntrite_Jacket", registeryID = 7051, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Rose_Jeans", registeryID = 7052, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Multi_Carrier_Carl", registeryID = 7053, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Rose_Cap_Back", registeryID = 7054, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Messkit", registeryID = 7055, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Coat", registeryID = 7056, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Nurse_Dress", registeryID = 7057, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Chain_Pants_Rolled", registeryID = 7058, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Pilot_Sunglass_ON", registeryID = 7059, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Wool_Stocking_Ripped", registeryID = 7060, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Ripped_Tights", registeryID = 7061, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Sports_Bra", registeryID = 7062, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Messkit_B", registeryID = 7063, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Round_Cap_Casual_Back", registeryID = 7064, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Pilot_Sunglass", registeryID = 7065, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.511_Pants", registeryID = 7066, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Leg", registeryID = 7067, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.BR_Skirts", registeryID = 7068, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.BR_Bunny_Suit", registeryID = 7069, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Chain_Mask", registeryID = 7070, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Sniper_Veil", registeryID = 7071, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.G3_Pants_Rolled", registeryID = 7072, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Round_Cap_Casual", registeryID = 7073, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Glove_Leather", registeryID = 7074, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Knife", registeryID = 7075, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Cargo_Pants", registeryID = 7076, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Fisher_Rope", registeryID = 7077, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Brig_Shirts", registeryID = 7078, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Nurse_Shoes", registeryID = 7079, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Hunter_Knee", registeryID = 7080, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Flex_Pants", registeryID = 7081, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.511_Pants_Rolled", registeryID = 7082, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Pants", registeryID = 7083, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bandit_Jacket_ON", registeryID = 7084, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Casual_Stocking_Ripped", registeryID = 7085, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Pants_Rolled", registeryID = 7086, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.NV_GPNVG_18", registeryID = 7087, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bandit_Jacket", registeryID = 7088, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Pencil_Skirts", registeryID = 7089, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_IDA", registeryID = 7090, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Metro_Gasmask", registeryID = 7091, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Check_Pants", registeryID = 7092, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Chain_Pants", registeryID = 7093, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Man_Check_Shirts_ON", registeryID = 7094, existsVanilla = false, isModded = true, modID = "Brita_2", obsolete = false, removed = false, isLoaded = true }
+};
