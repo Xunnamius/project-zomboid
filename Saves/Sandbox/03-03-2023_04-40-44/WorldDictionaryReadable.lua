@@ -63921,6 +63921,24 @@ items = {
 		obsolete = false,
 		removed = false,
 	},
+	{
+		registryID = 7095,
+		fulltype = "ATA2.ATABullbarPoliceItem1",
+		modID = "tsarslib",
+		existsAsVanilla = false,
+		isModded = true,
+		obsolete = false,
+		removed = false,
+	},
+	{
+		registryID = 7096,
+		fulltype = "ATA2.ATA2ItemContainer",
+		modID = "tsarslib",
+		existsAsVanilla = false,
+		isModded = true,
+		obsolete = false,
+		removed = false,
+	},
 }
 
 --[[ ---- OBJECTS ---- --]]
