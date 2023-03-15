@@ -267,6 +267,7 @@ mods
 	mod = HowStrongIsThatWall,
 	mod = BigNoiseTrap,
 	mod = RemoteCraftedV4,
+	mod = ammocraft,
 }
 
 maps

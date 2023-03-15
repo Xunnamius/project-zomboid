@@ -7661,3 +7661,192 @@ table.insert(log, {
 	{ type = "reg_item", fulltype = "ATA2.ATABullbarPoliceItem1", registeryID = 7095, existsVanilla = false, isModded = true, modID = "tsarslib", obsolete = false, removed = false, isLoaded = true }
 	{ type = "reg_item", fulltype = "ATA2.ATA2ItemContainer", registeryID = 7096, existsVanilla = false, isModded = true, modID = "tsarslib", obsolete = false, removed = false, isLoaded = true }
 };
+log = log or {};
+table.insert(log, {
+	-- -------------------------------------------------------
+	-- Time: 2023/03/15 15:22:34
+	{
+		type = "info",
+		timeStamp = "2023/03/15 15:22:34",
+		saveWorld = "03-03-2023_04-40-44",
+		worldVersion = 195,
+		hasErrored = false,
+		itemMods = {
+			"EN_Flags_Craft",
+			"AwesomeTime",
+			"MoreMaps",
+			"Authentic Z - Current",
+			"ExpandedHelicopterEvents",
+			"pz-vanilla",
+			"Brita_2",
+			"78amgeneralM35A2",
+			"70barracuda",
+			"MoreSmokes",
+			"89fordBronco",
+			"ammocraft",
+			"MonmouthCounty_new",
+			"74amgeneralM151A2",
+			"93townCar",
+			"89trooper",
+			"ImprovisedFlooring",
+			"AquatsarYachtClub",
+			"97bushmaster",
+			"tsarslib",
+			"ISA_41",
+			"FRUsedCars",
+			"Pitstop",
+			"manageContainers",
+			"SecretZ_v2",
+			"92amgeneralM998",
+			"PantryPacking",
+			"ReModVaccinDrReapersMP",
+			"86oshkoshP19A",
+			"isoContainers",
+			"82oshkoshM911",
+			"82jeepJ10",
+			"CrashedCarsMod",
+			"49powerWagon",
+			"83amgeneralM923",
+			"zReBetterLockpicking",
+			"BetterFlashlights",
+			"PertsPartyTiles",
+			"eggonsAllDoorsAreYours",
+			"Better Belts",
+			"ImprovisedGlass",
+			"MoreLockManagement",
+			"autotsartrailers",
+			"ATA_Bus",
+			"BB_CommonSense",
+			"70dodge",
+			"CoolBag",
+			"92nissanGTR",
+			"BCGTools",
+			"ImprovisedCabinetry",
+			"TMC_Trolley",
+			"DRK_1",
+			"RealMetalworking",
+			"TurningTime",
+			"Fantasiado ST. Bernard's Hill",
+			"RS_WaterCistern",
+			"EerieCountry",
+			"88chevyS10",
+			"Trelai_4x4_Steam",
+			"PocketTVVCR",
+			"89def110",
+			"FRUsedCarsFT",
+			"84merc",
+			"WaterDispenser",
+			"67commando",
+			"SaveOurStation_KnoxCountry",
+			"HandCrankFlashlights",
+			"agrotsar",
+			"Ladders",
+			"noirrsling",
+			"87cruiser",
+			"lakeivytownship",
+			"ImprovisedPaint",
+			"NVG",
+			"Advanced_trajectory_Fix",
+			"FencingKits",
+			"Xonics Mega Mall",
+			"DRAW_ON_MAP",
+			"KingsmouthKY",
+			"85merc",
+			"TicklistMod",
+			"BedfordFalls",
+			"NewEkron",
+			"RidingMower",
+			"Computer",
+			"SkillRecoveryJournal",
+			"SaveOurStation_Core",
+			"BLTAnnotations",
+			"89def90",
+			"BigNoiseTrap",
+			"RemoteCraftedV4",
+		},
+	},
+	{ type = "modchange_item", oldModID = "pz-vanilla", fulltype = "Base.GunPowder", registeryID = 53, existsVanilla = true, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "Base.Bullets44_casing", registeryID = 7097, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.ShotgunShells_casingbox", registeryID = 7098, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets45_tip", registeryID = 7099, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.223Bullets_casingbox", registeryID = 7100, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.308Bullets_casing_spent_noprimer", registeryID = 7101, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.223Bullets_tipbox", registeryID = 7102, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets38_tipbox", registeryID = 7103, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.308Bullets_tip", registeryID = 7104, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.44BulletsMold", registeryID = 7105, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "pz-vanilla", fulltype = "Base.308BulletsMold", registeryID = 583, existsVanilla = true, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "Base.GunnutMonthly1", registeryID = 7106, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.GunnutMonthly2", registeryID = 7107, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.GunnutMonthly3", registeryID = 7108, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.GunnutMonthly4", registeryID = 7109, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.GunnutMonthly5", registeryID = 7110, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.GunnutMonthly6", registeryID = 7111, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets9mm_tipbox", registeryID = 7112, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Lead", registeryID = 7113, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets45_casing", registeryID = 7114, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "pz-vanilla", fulltype = "Base.ShotgunShellsMold", registeryID = 1091, existsVanilla = true, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "Base.SG_Primers_Spent", registeryID = 7115, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets45_casing_spent", registeryID = 7116, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.ShotgunShells_tip", registeryID = 7117, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets45_casingbox", registeryID = 7118, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.ShotgunShells_casing_spent", registeryID = 7119, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Saltpeter", registeryID = 7120, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets38_casing_spent", registeryID = 7121, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.LP_Primers", registeryID = 7122, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Pliers", registeryID = 7123, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "pz-vanilla", fulltype = "Base.223BulletsMold", registeryID = 2445, existsVanilla = true, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "Base.Sulfur", registeryID = 7124, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.223Bullets_tip", registeryID = 7125, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.556Bullets_casing", registeryID = 7126, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.SP_Primers", registeryID = 7127, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "pz-vanilla", fulltype = "Base.Sparklers", registeryID = 2725, existsVanilla = true, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "Base.Bullets45_casing_spent_noprimer", registeryID = 7128, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.SG_Primers_box", registeryID = 7129, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.223Bullets_casing_spent", registeryID = 7130, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.ShotgunShells_casing_spent_noprimer", registeryID = 7131, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets9mm_casing", registeryID = 7132, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.556Bullets_tipbox", registeryID = 7133, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.556Bullets_casingbox", registeryID = 7134, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.308Bullets_casing", registeryID = 7135, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.GunpowderJar", registeryID = 7136, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Reloadingpress", registeryID = 7137, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.38BulletsMold", registeryID = 7138, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.556Bullets_casing_spent_noprimer", registeryID = 7139, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.45BulletsMold", registeryID = 7140, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.LP_Primers_box", registeryID = 7141, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets9mm_casingbox", registeryID = 7142, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.308Bullets_casing_spent", registeryID = 7143, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets44_casing_spent", registeryID = 7144, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.ShotgunShells_casing", registeryID = 7145, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.LP_Primers_Spent", registeryID = 7146, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.ShotgunShells_tipbox", registeryID = 7147, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.R_Primers_Spent", registeryID = 7148, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.308Bullets_tipbox", registeryID = 7149, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.223Bullets_casing_spent_noprimer", registeryID = 7150, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.556Bullets_casing_spent", registeryID = 7151, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets45_tipbox", registeryID = 7152, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.SP_Primers_box", registeryID = 7153, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.556Bullets_tip", registeryID = 7154, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets44_casingbox", registeryID = 7155, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.SP_Primers_Spent", registeryID = 7156, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.R_Primers", registeryID = 7157, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "modchange_item", oldModID = "pz-vanilla", fulltype = "Base.9mmBulletsMold", registeryID = 5599, existsVanilla = true, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = false }
+	{ type = "reg_item", fulltype = "Base.GunnutBible", registeryID = 7158, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets38_casing_spent_noprimer", registeryID = 7159, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets44_tipbox", registeryID = 7160, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets38_tip", registeryID = 7161, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.308Bullets_casingbox", registeryID = 7162, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Reloadpress", registeryID = 7163, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets44_tip", registeryID = 7164, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.223Bullets_casing", registeryID = 7165, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets38_casing", registeryID = 7166, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets44_casing_spent_noprimer", registeryID = 7167, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.SG_Primers", registeryID = 7168, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets9mm_tip", registeryID = 7169, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets38_casingbox", registeryID = 7170, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.R_Primers_box", registeryID = 7171, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets9mm_casing_spent", registeryID = 7172, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.Bullets9mm_casing_spent_noprimer", registeryID = 7173, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.556BulletsMold", registeryID = 7174, existsVanilla = false, isModded = true, modID = "ammocraft", obsolete = false, removed = false, isLoaded = true }
+};
