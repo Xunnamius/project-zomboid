@@ -1,4 +1,4 @@
 Burglar:burglar;HighThirst;Underweight;WeakStomach;SpeedDemon;NeedsLessSleep;KeenHearing;
 Firefighter:fireofficer;HighThirst;Underweight;ParanoidToker;WeakStomach;ShortSighted;NightVision;Dextrous;TVEnthusiast;nimblefingers2;FastLearner;KeenHearing;
 Carpenter:carpenter;HighThirst;Underweight;ParanoidToker;WeakStomach;NightVision;FastReader;TVEnthusiast;nimblefingers2;FastLearner;KeenHearing;
-Firefighter (MP):fireofficer;HighThirst;Underweight;WeakStomach;ShortSighted;SundayDriver;NightVision;KeenHearing;Strong;
+Firefighter (MP):fireofficer;HighThirst;SlowHealer;HeartyAppitite;ParanoidToker;WeakStomach;ShortSighted;SlowReader;SundayDriver;NightVision;KeenHearing;Athletic;Strong;
