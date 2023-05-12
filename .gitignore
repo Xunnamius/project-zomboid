@@ -16,6 +16,7 @@
 !Sandbox\ Presets
 !Sandbox\ Presets/**/*
 !.gitignore
+!.gitattributes
 !lastestSave.ini
 !*.mp3
 !options.ini
