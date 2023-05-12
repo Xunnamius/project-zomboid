@@ -1,3 +1,13 @@
+/**
+ * This script will take your X_SandboxVars.lua file and transform it into a
+ * Y.cfg file. This is useful when you want to take an existing server's
+ * sandbox variables and transform them into a preset that can be loaded
+ * in single player games or in multiplayer games if you're the admin.
+ *
+ * I used this script to create a "darkness runner zombie" preset vs "light
+ * shambler" preset to switch between when The Darkness Is Coming activates.
+ */ 
+
 import assert from 'node:assert';
 import fs from 'node:fs';
 import { parse } from 'lua-json';
