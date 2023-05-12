@@ -604,15 +604,15 @@ SandboxVars = {
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
         RespawnHours = 720.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
-        RespawnUnseenHours = 720.0,
+        RespawnUnseenHours = 8640.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
-        RespawnMultiplier = 0.01,
+        RespawnMultiplier = 0.001,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
-        RedistributeHours = 12.0,
+        RedistributeHours = 72.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
         FollowSoundDistance = 125,
         -- The size of groups real zombies form when idle. Zero means zombies don't form groups. Groups don't form inside buildings or forest zones. Minimum=0 Maximum=1000 Default=20
-        RallyGroupSize = 20,
+        RallyGroupSize = 40,
         -- The distance real zombies travel to form groups when idle. Minimum=5 Maximum=50 Default=20
         RallyTravelDistance = 20,
         -- The distance between zombie groups. Minimum=5 Maximum=25 Default=15
@@ -659,7 +659,7 @@ SandboxVars = {
         -- Minimum=0.00 Maximum=100.00 Default=1.00
         bulletdistance = 1.0,
         -- Minimum=0 Maximum=100 Default=5
-        shotgunnum = 10,
+        shotgunnum = 15,
         -- Minimum=0.00 Maximum=1.00 Default=0.20
         shotgundivision = 0.2,
         callshot = false,
