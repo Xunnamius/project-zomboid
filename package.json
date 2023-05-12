@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "audic": "^3.0.1",
+    "lua-json": "^1.0.1",
     "xml2js": "^0.5.0"
   }
 }
