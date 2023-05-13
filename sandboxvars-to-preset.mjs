@@ -6,6 +6,10 @@
  *
  * I used this script to create a "darkness runner zombie" preset vs "light
  * shambler" preset to switch between when The Darkness Is Coming activates.
+ *
+ * You can call this script like so (after running npm install):
+ *
+ * node sandboxvars-to-preset.mjs "C:\path\to\the\file\server_SandboxVars.lua" "C:\path\to\NEW\file\new-preset.cfg"
  */ 
 
 import assert from 'node:assert';
