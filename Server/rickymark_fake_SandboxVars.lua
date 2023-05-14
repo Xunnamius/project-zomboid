@@ -594,21 +594,21 @@ SandboxVars = {
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationMultiplier = 2.0,
+        PopulationMultiplier = 4.0,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationStartMultiplier = 1.0,
+        PopulationStartMultiplier = 0.5,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
-        PopulationPeakMultiplier = 2.0,
+        PopulationPeakMultiplier = 4.0,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
         PopulationPeakDay = 60,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
-        RespawnHours = 720.0,
+        RespawnHours = 0.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
-        RespawnUnseenHours = 8640.0,
+        RespawnUnseenHours = 8760.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
-        RespawnMultiplier = 0.001,
+        RespawnMultiplier = 0.0,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
-        RedistributeHours = 72.0,
+        RedistributeHours = 24.0,
         -- The distance a zombie will try to walk towards the last sound it heard. Minimum=10 Maximum=1000 Default=100
         FollowSoundDistance = 125,
         -- The size of groups real zombies form when idle. Zero means zombies don't form groups. Groups don't form inside buildings or forest zones. Minimum=0 Maximum=1000 Default=20
@@ -639,212 +639,6 @@ SandboxVars = {
         -- 3 = 24x  |  Normal (Recommended for Singleplayer)
         TimeDurationMultiplier = 3,
     },
-    Advanced_trajectory = {
-        aimpoint = true,
-        Enablerange = true,
-        Enablethrow = true,
-        playerdamage = true,
-        -- Minimum=0.00 Maximum=20.00 Default=0.70
-        fireoffset = 0.7,
-        -- Minimum=-100.00 Maximum=100.00 Default=-9.00
-        maxaimnum = -9.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.30
-        moveeffect = 1.3,
-        -- Minimum=0.00 Maximum=100.00 Default=0.70
-        turningeffect = 0.7,
-        -- Minimum=0.00 Maximum=100.00 Default=1.10
-        reducespeed = 1.1,
-        -- Minimum=0.00 Maximum=3.00 Default=1.20
-        bulletspeed = 2.35,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        bulletdistance = 1.0,
-        -- Minimum=0 Maximum=100 Default=5
-        shotgunnum = 15,
-        -- Minimum=0.00 Maximum=1.00 Default=0.20
-        shotgundivision = 0.2,
-        callshot = false,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        ATY_damage = 1.0,
-    },
-    DAMN = {
-        AllowPowerChadSpawns = true,
-        AllowBushmasterSpawns = true,
-    },
-    BecomeBrave = {
-        -- Minimum zombie kills required to have a chance to become desensitized. Minimum=1 Maximum=10000 Default=350
-        MinimumZombieKills = 250,
-        -- Maximum zombie kills required to become desensitized Minimum=1 Maximum=10000 Default=1500
-        MaximumZombieKills = 1000,
-        -- Consider traits that can increase the chance of becoming desensitized (more info in workshop page)
-        ConsiderTraits = true,
-        -- Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized
-        ConsiderOccupations = true,
-    },
-    BecomeDesensitized = {
-        -- Minimum zombie kills required to have a chance to become desensitized. Minimum=1 Maximum=10000 Default=500
-        MinimumZombieKills = 500,
-        -- Maximum zombie kills required to become desensitized Minimum=1 Maximum=10000 Default=2000
-        MaximumZombieKills = 2000,
-        -- Consider traits that can increase the chance of becoming desensitized (more info in workshop page)
-        ConsiderTraits = true,
-        -- Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized
-        ConsiderOccupations = true,
-    },
-    Coolbag = {
-        -- Beware ease is a close friend of boredom. Default=Keep individual Mod Option selection (default)
-        -- 1 = Cooler bags need to be refilled with an Ice Pocket (normal)
-        -- 2 = Cooler bags always keep the temperature low (easy mode)
-        CoolingMode = 3,
-        -- Deactivate to not get the freezing / melting timers.
-        Tooltip = true,
-        -- Time (hours) for a water pocket to fully freeze in a freezer (default = 12). Minimum=0 Maximum=100000 Default=12
-        FreezingTime = 12,
-        -- Time (hours) for an ice pocket to fully melt out of a freezer (default = 24). Minimum=0 Maximum=100000 Default=24
-        MeltingTime = 24,
-    },
-    CustomRepairSettings = {
-        -- Repair efficiency is constant and does not depend on repair counter.
-        NoPenaltiesMechanics = false,
-        -- Repair efficiency is constant and does not depend on repair counter.
-        NoPenaltiesOther = false,
-        -- Potential Repair is percentage of maximum item condition or its broken part? Default=Percentage of broken item part
-        -- 1 = Percentage of broken item part
-        MaxCondPotentialRepairMechanics = 1,
-        -- Potential Repair is percentage of maximum item condition or its broken part? Default=Percentage of broken item part
-        -- 1 = Percentage of broken item part
-        MaxCondPotentialRepairOther = 1,
-    },
-    eggonsAllDoorsAreYours = {
-        -- Doors can be transported only in trunks of TOTAL capacity of at leats 90. <LINE>Free capacity must be enough to fit the door. <LINE>E.g. door weighting 30 will fit into a trunk which is 60/90 full.
-        AllowTransportInLargeTrunksOnly = true,
-        -- Default door weights (30-40) will be multiplied by this number. Minimum=0.10 Maximum=2.00 Default=1.00
-        DoorsWeightMultiplier = 1.0,
-        -- Minimum Carpentry level required to take off door off hinges. Minimum=0 Maximum=10 Default=3
-        MinimumCarpentryLevel = 3,
-        -- Success probabilty at minimum Carpentry level. Minimum=0 Maximum=100 Default=75
-        SuccessChance = 75,
-        -- Increase of success chance per each Carpentry level abover minimum. Minimum=1 Maximum=100 Default=5
-        SuccessChanceIncrease = 5,
-    },
-    ISA = {
-        -- How often Battery Bank will charge Default=Every Ten Minutes
-        -- 1 = Every Ten Minutes
-        ChargeFreq = 1,
-        -- Regular Generator calculation has less performance impact Default=Regular Generator
-        -- 1 = ISA
-        DrainCalc = 2,
-        -- Solar panel power efficiency
-        -- 12% is realistic for 1993
-        -- 25% is modern solar
-        -- default is unrealistic Minimum=1 Maximum=100 Default=25
-        solarPanelEfficiency = 15,
-        -- Multiplier for the average degrade of batteries. Decreasing this will dramatically increase battery life. Minimum=0 Maximum=1000 Default=100
-        batteryDegradeChance = 100,
-        -- Multiplier for the capacity of crafted DIY batteries. Minimum=1 Maximum=10000 Default=100
-        DIYBatteryMultiplier = 100,
-        -- Minimum=0 Maximum=100 Default=25
-        solarPanelWorldSpawns = 25,
-        -- Rarity of Battery Bank spawning on the map. Default=Rare
-        -- 1 = None
-        -- 2 = Very Rare
-        -- 3 = Rare
-        BatteryBankSpawn = 3,
-        -- Choose mode for Stash Houses.
-        -- Change only on new game. Default=Add Stash Houses
-        -- 1 = Don't add Stash Houses
-        -- 2 = Add Stash Houses
-        StashMode = 2,
-        -- Solar panel spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
-        LRMSolarPanels = 1.0,
-        -- Batteries spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
-        LRMBatteries = 1.0,
-        -- Magazine and inverter spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
-        LRMMisc = 1.0,
-        -- Base number of in-game minutes it takes to connect one panel Minimum=1 Maximum=1000 Default=120
-        ConnectPanelMin = 120,
-        -- Allows to craft solar panels and inverters
-        enableExpandedRecipes = false,
-    },
-    LingeringReflexes = {
-        -- Percentage of smart zombies that will be present in the world. These zombies can open doors. Minimum=0.00 Maximum=100.00 Default=1.00
-        Smart = 1.0,
-        -- The interval in milliseconds between two updates. Higher number means less CPU usage, lower number means less correctness issues. Default setting is recommended. Minimum=1000 Maximum=60000 Default=7500
-        Frequency = 7500,
-    },
-    LingeringVoices = {
-        -- Zombies react to zombie talking like the player shout
-        RespondToSound = true,
-        -- Whether to use the custom lines in USERNAME/Zomboid/Lua/talkingDeadCustomLine.lua
-        CustomLines = true,
-        -- Minimum amount of seconds that need to pass before another line is said by a zombie. Minimum=0 Maximum=604800 Default=5
-        LowerLineLimit = 5,
-        -- Maximum amount of seconds that need to pass before another line is said by a zombie. Minimum=0 Maximum=604800 Default=86400
-        UpperLineLimit = 86400,
-        -- Chance out of 1000 for a zombie to speak when hit. Minimum=0 Maximum=1000 Default=1
-        StaggerSpeakChance = 1,
-    },
-    MoreSmokes = {
-        -- Establishes the base amount of More Smokes loot in distribution Default=Normal
-        -- 1 = Low
-        -- 2 = Normal
-        -- 3 = High
-        -- 4 = Very High
-        Loot = 2,
-        -- Stoner Moodle start as on but you can choose to turn off the moodle
-        Moodle = true,
-        -- Defines the multiplier to spawn rate of More Smokes Kits found in the world Minimum=1 Maximum=10 Default=2
-        Kits = 2,
-        -- Defines the multiplier to spawn rate of Cultivation Books and Recipe Magazines found in the world Minimum=1 Maximum=10 Default=2
-        Magazines = 2,
-        -- Unlocks spawns for Mod Backer's Rare Recipe Magazines not in spawn pool by default
-        RareMagazines = true,
-        -- Defines the multiplier to spawn rate of Seed Packets found in the world Minimum=1 Maximum=10 Default=2
-        Seeds = 2,
-        -- Default on, can toggle all cannabis natural spawns in game
-        YesCannabis = true,
-        -- Defines the multiplier to spawn rate of Cannabis Items found in the world Minimum=1 Maximum=10 Default=2
-        Cannabis = 2,
-        -- Default on, can toggle all Tobacco natural spawns in game
-        YesTobacco = true,
-        -- Defines the multiplier to spawn rate of Tobacco Items found in the world Minimum=1 Maximum=10 Default=2
-        Tobacco = 2,
-        -- Defines the multiplier to spawn rate of Cannabis Infused Edibles found in the world Minimum=1 Maximum=10 Default=2
-        Edibles = 2,
-        -- Defines the multiplier to spawn rate of Bongs, Pipes, and Hookahs found in the world Minimum=1 Maximum=10 Default=2
-        Glassware = 2,
-        -- Default is 2 balanced for 1 hour days, influences hunger and thirst gains while high Minimum=1 Maximum=50 Default=2
-        Munchies = 2,
-        -- Default is 2 balanced for 1 hour days, influences the stoner trait perks Minimum=1 Maximum=50 Default=2
-        StonerPerk = 2,
-        -- Default is 2 balanced for 1 hour days, influences negative experiences of the paranoid toker trait Minimum=1 Maximum=50 Default=2
-        Paranoid = 2,
-        -- Cultivation levels provide a + 1-4 to usable product when processing tobacco or cannabis, add to that amount with this option Minimum=0 Maximum=5 Default=0
-        CultivationBonus = 0,
-        -- Default is 2 balanced for 1 hour days, establishes the rate of how stoned you get per cannabis item consumed Minimum=1 Maximum=50 Default=2
-        StonedIncreaseMulti = 2,
-        -- Default is 2 balanced for 1 hour days, Increases the rate in which you lose your high after getting stoned Minimum=1 Maximum=50 Default=2
-        StonedDecreaseMulti = 2,
-        -- If you change the values below, plan to restart your game/server for changes to take effect. This checkbox does nothing
-        TimerInfo = true,
-        -- Default 10 is equal to base cure and drying times, lower is faster as 1 = 10% of time required where as 20 = 200% of time required Minimum=1 Maximum=20 Default=10
-        DryCureChange = 10,
-        -- Adds the amount returned on harvest per crop, if set at 0 you minimally get 1 per harvest Minimum=0 Maximum=10 Default=2
-        HarvestAdd = 2,
-        -- Defines the in game hours for each growing phase to finish Minimum=12 Maximum=250 Default=90
-        GrowTimer = 90,
-        -- Defines the in game hours it will take a crop to rot after phase 7 Minimum=12 Maximum=250 Default=90
-        RotTimer = 90,
-    },
-    ReadWalking = {
-        -- The darkness of the reading fog. 0.0 means no darkness. 1.0 means full darkness. Minimum=0.00 Maximum=1.00 Default=1.00
-        FogDarkness = 1.0,
-        -- The mod: Read While Walking 1.0 means x1 vanilla defaults. 2.0 means speed x2, etc. Minimum=0.20 Maximum=100.00 Default=1.00
-        ReadSpeed = 1.0,
-    },
-    BLTAnnotations = {
-        -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
-        DropMapOnDeath = true,
-    },
     SkillRecoveryJournal = {
         -- The amount of experienced recovered from reading bound journals. Minimum=1 Maximum=100 Default=100
         RecoveryPercentage = 80,
@@ -872,25 +666,6 @@ SandboxVars = {
         RecoverRecipes = true,
         -- Normally you can reread the journal as many times as you like - with this toggled on each individual XP point can only be recovered once. You can still add onto the journal, but each point can only be recovered once on each journal. Note: the tooltip for the journal will now display a fraction for unused points.
         RecoveryJournalUsed = false,
-    },
-    SFTurn = {
-        -- Applied on top of the standard population. Default=Standard
-        -- 1 = None
-        -- 2 = Rare
-        -- 3 = Standard
-        -- 4 = High
-        RarityBanshee = 3,
-        -- Applied on top of the standard population. Default=Standard
-        -- 1 = None
-        -- 2 = Rare
-        -- 3 = Standard
-        -- 4 = High
-        RarityNemesis = 2,
-        ImmortalNemesis = false,
-    },
-    SpearTraps = {
-        -- Kill players when they walk over a spear trap
-        SpearTrapsKillPlayer = true,
     },
     TheDarknessIsComing = {
         -- Base amount of hours between one darkness event and another. This will start ticking down when one event finishes. Minimum=0 Maximum=720 Default=120
@@ -979,85 +754,32 @@ SandboxVars = {
         -- 3 = Short
         darkZombiesMemory = 1,
     },
-    VehicleRecycling = {
-        -- The following parts must be uninstalled before dismantling: hood, trunk lid, doors, windows, seats.
-        UninstallParts = true,
-        -- Minimum=1 Maximum=100 Default=1
-        ActionTimeMultiplier = 1,
-    },
-    FC4WorkingTreadmill = {
+    Advanced_trajectory = {
+        aimpoint = true,
+        Enablerange = true,
+        Enablethrow = true,
+        playerdamage = true,
+        -- Minimum=0.00 Maximum=20.00 Default=0.70
+        fireoffset = 0.7,
+        -- Minimum=-100.00 Maximum=100.00 Default=-9.00
+        maxaimnum = -9.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.30
+        moveeffect = 1.3,
+        -- Minimum=0.00 Maximum=100.00 Default=0.70
+        turningeffect = 0.7,
+        -- Minimum=0.00 Maximum=100.00 Default=1.10
+        reducespeed = 1.1,
+        -- Minimum=0.00 Maximum=3.00 Default=1.20
+        bulletspeed = 2.35,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        FitnessXPMultiply = 1.0,
+        bulletdistance = 1.0,
+        -- Minimum=0 Maximum=100 Default=5
+        shotgunnum = 15,
+        -- Minimum=0.00 Maximum=1.00 Default=0.20
+        shotgundivision = 0.2,
+        callshot = false,
         -- Minimum=0.00 Maximum=100.00 Default=1.00
-        StrengthXPMultiply = 1.0,
-        -- Minimum=0.00 Maximum=100.00 Default=1.00
-        SprintingXPMultiply = 1.0,
-    },
-    ExpandedHeli = {
-        -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
-        StartDay = 0,
-        -- How long will the scheduler run from the start day.  The scheduler will adjust event progression to fit this duration. Minimum=1 Maximum=999 Default=90
-        SchedulerDuration = 100,
-        -- Toggle this on so that the scheduler will spawn events passed the duration limit. Events will still progress through stages according to the duration but events will never stop being scheduled.
-        ContinueScheduling = true,
-        -- When "Continue Scheduling Forever" is toggle on, this toggled on makes the scheduler only use late-game events.
-        ContinueSchedulingLateGameOnly = true,
-        -- How frequent jet events occur.  Jets fly by players causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_jet = 3,
-        -- How frequent Police events occur.  The police will take matters into their own hands and escort citizens around while firing on zombies. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_police = 3,
-        -- How frequent news events occur.  News choppers will hone in on any citizen they find and follow them around for a short time. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_news_chopper = 3,
-        -- How frequent military events occur.  The military will progress through stages: warn citizens, purge the undead, then ultimately purge anything that moves. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_military = 3,
-        -- How frequent FEMA aid drop events occur.  FEMA will conduct aid drops early on in the apocalypse. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_FEMA_drop = 3,
-        -- How frequent samaritan events occur.  Samaritans will drop off supplies to help survivors. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_samaritan_drop = 3,
-        -- How frequent survivor events occur.  Survivors will only flyby on scouting missions causing horde movement. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_survivor_heli = 3,
-        -- How frequent raider events occur.  Raiders will hone in on survivors to torment them for some entertainment. Default=Uncommon
-        -- 1 = Never
-        -- 2 = Rare
-        -- 3 = Uncommon
-        -- 4 = Common
-        -- 5 = Frequent
-        Frequency_raiders = 3,
+        ATY_damage = 1.0,
     },
     zReEXPS = {
         -- The amount of experience transferred to a skill from one category to another. Minimum=0 Maximum=100 Default=30
@@ -1128,6 +850,272 @@ SandboxVars = {
         NotesInBlackChemZombieSpawnChance = 30,
         -- Ranges from 0 to 2, default is 1. Setting to 0 disables book spawning in the world. Does not affect book spawning for zombies in the black chem-suit. Minimum=0.00 Maximum=2.00 Default=1.00
         BookInWorldSpawnChance = 1.0,
+    },
+    BecomeBrave = {
+        -- Minimum zombie kills required to have a chance to become desensitized. Minimum=1 Maximum=10000 Default=350
+        MinimumZombieKills = 250,
+        -- Maximum zombie kills required to become desensitized Minimum=1 Maximum=10000 Default=1500
+        MaximumZombieKills = 1000,
+        -- Consider traits that can increase the chance of becoming desensitized (more info in workshop page)
+        ConsiderTraits = true,
+        -- Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized
+        ConsiderOccupations = true,
+    },
+    BecomeDesensitized = {
+        -- Minimum zombie kills required to have a chance to become desensitized. Minimum=1 Maximum=10000 Default=500
+        MinimumZombieKills = 500,
+        -- Maximum zombie kills required to become desensitized Minimum=1 Maximum=10000 Default=2000
+        MaximumZombieKills = 2000,
+        -- Consider traits that can increase the chance of becoming desensitized (more info in workshop page)
+        ConsiderTraits = true,
+        -- Consider occupations Police, Fireman, Park Ranger, Security Guard, Doctor and Nurse that can increase the chance of becoming desensitized
+        ConsiderOccupations = true,
+    },
+    ExpandedHeli = {
+        -- The day the scheduler will start assigning events to. Minimum=0 Maximum=999 Default=0
+        StartDay = 0,
+        -- How long will the scheduler run from the start day.  The scheduler will adjust event progression to fit this duration. Minimum=1 Maximum=999 Default=90
+        SchedulerDuration = 100,
+        -- Toggle this on so that the scheduler will spawn events passed the duration limit. Events will still progress through stages according to the duration but events will never stop being scheduled.
+        ContinueScheduling = true,
+        -- When "Continue Scheduling Forever" is toggle on, this toggled on makes the scheduler only use late-game events.
+        ContinueSchedulingLateGameOnly = true,
+        -- How frequent jet events occur.  Jets fly by players causing horde movement. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_jet = 3,
+        -- How frequent Police events occur.  The police will take matters into their own hands and escort citizens around while firing on zombies. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_police = 3,
+        -- How frequent news events occur.  News choppers will hone in on any citizen they find and follow them around for a short time. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_news_chopper = 3,
+        -- How frequent military events occur.  The military will progress through stages: warn citizens, purge the undead, then ultimately purge anything that moves. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_military = 3,
+        -- How frequent FEMA aid drop events occur.  FEMA will conduct aid drops early on in the apocalypse. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_FEMA_drop = 3,
+        -- How frequent samaritan events occur.  Samaritans will drop off supplies to help survivors. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_samaritan_drop = 3,
+        -- How frequent survivor events occur.  Survivors will only flyby on scouting missions causing horde movement. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_survivor_heli = 3,
+        -- How frequent raider events occur.  Raiders will hone in on survivors to torment them for some entertainment. Default=Uncommon
+        -- 1 = Never
+        -- 2 = Rare
+        -- 3 = Uncommon
+        -- 4 = Common
+        -- 5 = Frequent
+        Frequency_raiders = 3,
+    },
+    SFTurn = {
+        -- Applied on top of the standard population. Default=Standard
+        -- 1 = None
+        -- 2 = Rare
+        -- 3 = Standard
+        -- 4 = High
+        RarityBanshee = 3,
+        -- Applied on top of the standard population. Default=Standard
+        -- 1 = None
+        -- 2 = Rare
+        -- 3 = Standard
+        -- 4 = High
+        RarityNemesis = 2,
+        ImmortalNemesis = false,
+    },
+    ISA = {
+        -- How often Battery Bank will charge Default=Every Ten Minutes
+        -- 1 = Every Ten Minutes
+        ChargeFreq = 1,
+        -- Regular Generator calculation has less performance impact Default=Regular Generator
+        -- 1 = ISA
+        DrainCalc = 2,
+        -- Solar panel power efficiency
+        -- 12% is realistic for 1993
+        -- 25% is modern solar
+        -- default is unrealistic Minimum=1 Maximum=100 Default=25
+        solarPanelEfficiency = 15,
+        -- Multiplier for the average degrade of batteries. Decreasing this will dramatically increase battery life. Minimum=0 Maximum=1000 Default=100
+        batteryDegradeChance = 100,
+        -- Multiplier for the capacity of crafted DIY batteries. Minimum=1 Maximum=10000 Default=100
+        DIYBatteryMultiplier = 100,
+        -- Minimum=0 Maximum=100 Default=25
+        solarPanelWorldSpawns = 25,
+        -- Rarity of Battery Bank spawning on the map. Default=Rare
+        -- 1 = None
+        -- 2 = Very Rare
+        -- 3 = Rare
+        BatteryBankSpawn = 3,
+        -- Choose mode for Stash Houses.
+        -- Change only on new game. Default=Add Stash Houses
+        -- 1 = Don't add Stash Houses
+        -- 2 = Add Stash Houses
+        StashMode = 2,
+        -- Solar panel spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMSolarPanels = 1.0,
+        -- Batteries spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMBatteries = 1.0,
+        -- Magazine and inverter spawns in random containers and pre-placed crates multiplier Minimum=0.00 Maximum=100.00 Default=1.00
+        LRMMisc = 1.0,
+        -- Base number of in-game minutes it takes to connect one panel Minimum=1 Maximum=1000 Default=120
+        ConnectPanelMin = 120,
+        -- Allows to craft solar panels and inverters
+        enableExpandedRecipes = false,
+    },
+    LingeringReflexes = {
+        -- Percentage of smart zombies that will be present in the world. These zombies can open doors. Minimum=0.00 Maximum=100.00 Default=1.00
+        Smart = 1.0,
+        -- The interval in milliseconds between two updates. Higher number means less CPU usage, lower number means less correctness issues. Default setting is recommended. Minimum=1000 Maximum=60000 Default=7500
+        Frequency = 7500,
+    },
+    LingeringVoices = {
+        -- Zombies react to zombie talking like the player shout
+        RespondToSound = true,
+        -- Whether to use the custom lines in USERNAME/Zomboid/Lua/talkingDeadCustomLine.lua
+        CustomLines = true,
+        -- Minimum amount of seconds that need to pass before another line is said by a zombie. Minimum=0 Maximum=604800 Default=5
+        LowerLineLimit = 5,
+        -- Maximum amount of seconds that need to pass before another line is said by a zombie. Minimum=0 Maximum=604800 Default=86400
+        UpperLineLimit = 86400,
+        -- Chance out of 1000 for a zombie to speak when hit. Minimum=0 Maximum=1000 Default=1
+        StaggerSpeakChance = 1,
+    },
+    VehicleRecycling = {
+        -- The following parts must be uninstalled before dismantling: hood, trunk lid, doors, windows, seats.
+        UninstallParts = true,
+        -- Minimum=1 Maximum=100 Default=1
+        ActionTimeMultiplier = 1,
+    },
+    Coolbag = {
+        -- Beware ease is a close friend of boredom. Default=Keep individual Mod Option selection (default)
+        -- 1 = Cooler bags need to be refilled with an Ice Pocket (normal)
+        -- 2 = Cooler bags always keep the temperature low (easy mode)
+        CoolingMode = 3,
+        -- Deactivate to not get the freezing / melting timers.
+        Tooltip = true,
+        -- Time (hours) for a water pocket to fully freeze in a freezer (default = 12). Minimum=0 Maximum=100000 Default=12
+        FreezingTime = 12,
+        -- Time (hours) for an ice pocket to fully melt out of a freezer (default = 24). Minimum=0 Maximum=100000 Default=24
+        MeltingTime = 24,
+    },
+    eggonsAllDoorsAreYours = {
+        -- Doors can be transported only in trunks of TOTAL capacity of at leats 90. <LINE>Free capacity must be enough to fit the door. <LINE>E.g. door weighting 30 will fit into a trunk which is 60/90 full.
+        AllowTransportInLargeTrunksOnly = true,
+        -- Default door weights (30-40) will be multiplied by this number. Minimum=0.10 Maximum=2.00 Default=1.00
+        DoorsWeightMultiplier = 1.0,
+        -- Minimum Carpentry level required to take off door off hinges. Minimum=0 Maximum=10 Default=3
+        MinimumCarpentryLevel = 3,
+        -- Success probabilty at minimum Carpentry level. Minimum=0 Maximum=100 Default=75
+        SuccessChance = 75,
+        -- Increase of success chance per each Carpentry level abover minimum. Minimum=1 Maximum=100 Default=5
+        SuccessChanceIncrease = 5,
+    },
+    MoreSmokes = {
+        -- Establishes the base amount of More Smokes loot in distribution Default=Normal
+        -- 1 = Low
+        -- 2 = Normal
+        -- 3 = High
+        -- 4 = Very High
+        Loot = 2,
+        -- Stoner Moodle start as on but you can choose to turn off the moodle
+        Moodle = true,
+        -- Defines the multiplier to spawn rate of More Smokes Kits found in the world Minimum=1 Maximum=10 Default=2
+        Kits = 2,
+        -- Defines the multiplier to spawn rate of Cultivation Books and Recipe Magazines found in the world Minimum=1 Maximum=10 Default=2
+        Magazines = 2,
+        -- Unlocks spawns for Mod Backer's Rare Recipe Magazines not in spawn pool by default
+        RareMagazines = true,
+        -- Defines the multiplier to spawn rate of Seed Packets found in the world Minimum=1 Maximum=10 Default=2
+        Seeds = 2,
+        -- Default on, can toggle all cannabis natural spawns in game
+        YesCannabis = true,
+        -- Defines the multiplier to spawn rate of Cannabis Items found in the world Minimum=1 Maximum=10 Default=2
+        Cannabis = 2,
+        -- Default on, can toggle all Tobacco natural spawns in game
+        YesTobacco = true,
+        -- Defines the multiplier to spawn rate of Tobacco Items found in the world Minimum=1 Maximum=10 Default=2
+        Tobacco = 2,
+        -- Defines the multiplier to spawn rate of Cannabis Infused Edibles found in the world Minimum=1 Maximum=10 Default=2
+        Edibles = 2,
+        -- Defines the multiplier to spawn rate of Bongs, Pipes, and Hookahs found in the world Minimum=1 Maximum=10 Default=2
+        Glassware = 2,
+        -- Default is 2 balanced for 1 hour days, influences hunger and thirst gains while high Minimum=1 Maximum=50 Default=2
+        Munchies = 2,
+        -- Default is 2 balanced for 1 hour days, influences the stoner trait perks Minimum=1 Maximum=50 Default=2
+        StonerPerk = 2,
+        -- Default is 2 balanced for 1 hour days, influences negative experiences of the paranoid toker trait Minimum=1 Maximum=50 Default=2
+        Paranoid = 2,
+        -- Cultivation levels provide a + 1-4 to usable product when processing tobacco or cannabis, add to that amount with this option Minimum=0 Maximum=5 Default=0
+        CultivationBonus = 0,
+        -- Default is 2 balanced for 1 hour days, establishes the rate of how stoned you get per cannabis item consumed Minimum=1 Maximum=50 Default=2
+        StonedIncreaseMulti = 2,
+        -- Default is 2 balanced for 1 hour days, Increases the rate in which you lose your high after getting stoned Minimum=1 Maximum=50 Default=2
+        StonedDecreaseMulti = 2,
+        -- If you change the values below, plan to restart your game/server for changes to take effect. This checkbox does nothing
+        TimerInfo = true,
+        -- Default 10 is equal to base cure and drying times, lower is faster as 1 = 10% of time required where as 20 = 200% of time required Minimum=1 Maximum=20 Default=10
+        DryCureChange = 10,
+        -- Adds the amount returned on harvest per crop, if set at 0 you minimally get 1 per harvest Minimum=0 Maximum=10 Default=2
+        HarvestAdd = 2,
+        -- Defines the in game hours for each growing phase to finish Minimum=12 Maximum=250 Default=90
+        GrowTimer = 90,
+        -- Defines the in game hours it will take a crop to rot after phase 7 Minimum=12 Maximum=250 Default=90
+        RotTimer = 90,
+    },
+    ReadWalking = {
+        -- The darkness of the reading fog. 0.0 means no darkness. 1.0 means full darkness. Minimum=0.00 Maximum=1.00 Default=1.00
+        FogDarkness = 1.0,
+        -- The mod: Read While Walking 1.0 means x1 vanilla defaults. 2.0 means speed x2, etc. Minimum=0.20 Maximum=100.00 Default=1.00
+        ReadSpeed = 1.0,
+    },
+    BLTAnnotations = {
+        -- If enabled, player corpses will include a fully annotated map containing every symbols from their main map
+        DropMapOnDeath = true,
+    },
+    FC4WorkingTreadmill = {
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        FitnessXPMultiply = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        StrengthXPMultiply = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        SprintingXPMultiply = 1.0,
+    },
+    DAMN = {
+        AllowBushmasterSpawns = true,
+        AllowPowerChadSpawns = true,
+    },
+    SpearTraps = {
+        -- Kill players when they walk over a spear trap
+        SpearTrapsKillPlayer = true,
     },
     MoreMaps = {
         -- As junk items, with the same chance as the vanilla maps, some rarer.
@@ -1280,6 +1268,18 @@ SandboxVars = {
         WoodScaleHealth = 25,
         -- Damage multiplier of cheval de frise Minimum=1 Maximum=1000 Default=3
         WoodDamage = 3,
+    },
+    CustomRepairSettings = {
+        -- Repair efficiency is constant and does not depend on repair counter.
+        NoPenaltiesMechanics = false,
+        -- Repair efficiency is constant and does not depend on repair counter.
+        NoPenaltiesOther = false,
+        -- Potential Repair is percentage of maximum item condition or its broken part? Default=Percentage of broken item part
+        -- 1 = Percentage of broken item part
+        MaxCondPotentialRepairMechanics = 1,
+        -- Potential Repair is percentage of maximum item condition or its broken part? Default=Percentage of broken item part
+        -- 1 = Percentage of broken item part
+        MaxCondPotentialRepairOther = 1,
     },
     StockDamage = {
         -- Minimum=0.00 Maximum=200.00 Default=10.00
